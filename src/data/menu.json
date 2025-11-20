@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "name": "Burger and Fries",
+    "sides": ["fries", "coleslaw"]
+  },
+  {
+    "id": 2,
+    "name": "Spaghetti with Garlic Bread",
+    "sides": ["garlic bread", "salad"]
+  },
+  {
+    "id": 3,
+    "name": "Grilled Chicken with Rice and Veggies",
+    "sides": ["rice", "steamed vegetables"]
+  },
+  {
+    "id": 4,
+    "name": "Tacos with Spanish Rice",
+    "sides": ["spanish rice", "refried beans"]
+  },
+  {
+    "id": 5,
+    "name": "Fish and Chips",
+    "sides": ["french fries", "tartar sauce"]
+  },
+  {
+    "id": 6,
+    "name": "BBQ Ribs with Cornbread",
+    "sides": ["cornbread", "baked beans"]
+  },
+  {
+    "id": 7,
+    "name": "Chicken Stir Fry with Fried Rice",
+    "sides": ["fried rice", "egg roll"]
+  },
+  {
+    "id": 8,
+    "name": "Steak with Mashed Potatoes",
+    "sides": ["mashed potatoes", "green beans"]
+  },
+  {
+    "id": 9,
+    "name": "Salmon with Roasted Vegetables",
+    "sides": ["roasted vegetables", "quinoa"]
+  },
+  {
+    "id": 10,
+    "name": "Chicken Parmesan with Pasta",
+    "sides": ["spaghetti", "garlic bread"]
+  },
+  {
+    "id": 11,
+    "name": "Veggie Pizza with Salad",
+    "sides": ["caesar salad", "breadsticks"]
+  },
+  {
+    "id": 12,
+    "name": "Pulled Pork Sandwich with Coleslaw",
+    "sides": ["coleslaw", "potato chips"]
+  },
+  {
+    "id": 13,
+    "name": "Shrimp Scampi with Pasta",
+    "sides": ["linguine", "garlic bread"]
+  },
+  {
+    "id": 14,
+    "name": "Meatloaf with Mac and Cheese",
+    "sides": ["mac and cheese", "green beans"]
+  },
+  {
+    "id": 15,
+    "name": "Chicken Fajitas with Rice",
+    "sides": ["mexican rice", "refried beans"]
+  },
+  {
+    "id": 16,
+    "name": "Lasagna with Garlic Bread",
+    "sides": ["garlic bread", "caesar salad"]
+  },
+  {
+    "id": 17,
+    "name": "Grilled Pork Chops with Applesauce",
+    "sides": ["applesauce", "roasted potatoes"]
+  },
+  {
+    "id": 18,
+    "name": "Teriyaki Chicken Bowl",
+    "sides": ["steamed rice", "stir-fried vegetables"]
+  },
+  {
+    "id": 19,
+    "name": "Fish Tacos with Black Beans",
+    "sides": ["black beans", "mexican street corn"]
+  },
+  {
+    "id": 20,
+    "name": "Beef Enchiladas with Spanish Rice",
+    "sides": ["spanish rice", "refried beans"]
+  },
+  {
+    "id": 21,
+    "name": "Chicken Alfredo with Broccoli",
+    "sides": ["fettuccine", "steamed broccoli"]
+  },
+  {
+    "id": 22,
+    "name": "Pot Roast with Vegetables",
+    "sides": ["roasted carrots", "mashed potatoes"]
+  },
+  {
+    "id": 23,
+    "name": "Baked Salmon with Quinoa",
+    "sides": ["quinoa", "asparagus"]
+  },
+  {
+    "id": 24,
+    "name": "Sloppy Joes with Fries",
+    "sides": ["french fries", "pickles"]
+  },
+  {
+    "id": 25,
+    "name": "Chicken Tikka Masala with Naan",
+    "sides": ["basmati rice", "naan bread"]
+  },
+  {
+    "id": 26,
+    "name": "Veggie Stir Fry with Tofu",
+    "sides": ["jasmine rice", "spring rolls"]
+  },
+  {
+    "id": 27,
+    "name": "Pork Fried Rice",
+    "sides": ["egg rolls", "wonton soup"]
+  },
+  {
+    "id": 28,
+    "name": "Chicken Wings with Potato Wedges",
+    "sides": ["potato wedges", "ranch dip"]
+  },
+  {
+    "id": 29,
+    "name": "Shrimp Fried Rice",
+    "sides": ["vegetable spring rolls", "sweet and sour sauce"]
+  },
+  {
+    "id": 30,
+    "name": "Chili with Cornbread",
+    "sides": ["cornbread", "sour cream"]
+  }
+]

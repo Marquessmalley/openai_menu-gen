@@ -1,5 +1,5 @@
 {
-  "name": "text-chat",
+  "name": "openai-menu-gen",
   "version": "1.0.0",
   "main": "dist/index.js",
   "type": "module",
@@ -14,10 +14,12 @@
   "description": "",
   "devDependencies": {
     "@types/node": "^24.10.0",
+    "@types/nodemailer": "^7.0.4",
     "typescript": "^5.9.3"
   },
   "dependencies": {
     "dotenv": "^17.2.3",
+    "nodemailer": "^7.0.10",
     "openai": "^6.8.1"
   }
 }
