@@ -1,6 +1,6 @@
 import "dotenv/config";
 import { openAiClient } from "./lib/openai.js";
-import { transporter } from "./lib/nodemailer.js";
+import { sendEmail } from "./lib/nodemailer.js";
 import { ReadMenu, SaveMenu } from "./utils/menu-helper.js";
 
 const subcribers: string[] = ["ksmalley77@gmail.com"];
@@ -59,6 +59,10 @@ export default async function GenerateMonthlySchedule() {
   }
 
   await SaveMenu(schedule);
+
+  for (const subscriber of subcribers) {
+    await sendEmail(subscriber, schedule);
+  }
 }
 
 GenerateMonthlySchedule();

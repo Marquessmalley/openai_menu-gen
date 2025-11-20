@@ -22,9 +22,9 @@ export const SaveMenu = async (schedule: string) => {
   const outputDir = path.join(process.cwd(), "src/data/output");
 
   if (!fs.existsSync(outputDir)) {
-    fs.mkdir(outputDir, { recursive: true }, () => {});
+    fs.promises.mkdir(outputDir, { recursive: true });
   }
 
   const filePath = path.join(outputDir, `${month}-${year}-menu.txt`);
-  fs.writeFile(filePath, schedule, () => {});
+  fs.promises.writeFile(filePath, schedule);
 };
