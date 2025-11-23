@@ -26,7 +26,7 @@ jobs:
 
       - name: Run Program
         env:
-          OPENAI_AI_KEY: ${{ secrets.OPEN_AI_KEY }}
+          OPEN_AI_KEY: ${{ secrets.OPEN_AI_KEY }}
           EMAIL: ${{ secrets.EMAIL }}
           PASSWORD: ${{ secrets.PASSWORD }}
         run: npm run start
