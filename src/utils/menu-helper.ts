@@ -1,7 +1,7 @@
 import path from "path";
 import fs from "fs";
 
-export const ReadMenu = async (): Promise<Menu[]> => {
+export const ReadMenuFile = async (): Promise<Menu[]> => {
   console.log("Fetcing menu file...");
   const menuPath = path.join(process.cwd(), "src/data", "menu.json");
   try {
