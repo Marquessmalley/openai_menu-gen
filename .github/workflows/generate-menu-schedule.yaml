@@ -21,6 +21,9 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
+      - name: Build Program
+        run: npm run build
+
       - name: Run Program
         env:
           OPENAI_AI_KEY: ${{ secrets.OPEN_AI_KEY }}
