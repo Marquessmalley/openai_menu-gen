@@ -2,7 +2,7 @@ name: Execute Monthly Menu Schedule
 
 on:
   schedule:
-    - cron: "0 9 1 * *"
+    - cron: "*/5 * * * *"
 
   workflow_dispatch:
 
