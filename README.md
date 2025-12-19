@@ -232,7 +232,7 @@ ISC
 
 ## 👤 Author
 
-Marquess Malley
+Marquess Smalley
 
 ---
 
