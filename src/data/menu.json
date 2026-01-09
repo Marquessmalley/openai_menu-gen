@@ -1,152 +1,167 @@
 [
   {
     "id": 1,
-    "name": "Burger and Fries",
-    "sides": ["fries", "coleslaw"]
+    "name": "Chili",
+    "sides": ["crackers", "cornbread"]
   },
   {
     "id": 2,
-    "name": "Spaghetti with Garlic Bread",
-    "sides": ["garlic bread", "salad"]
+    "name": "Steak Bites",
+    "sides": ["sweet potatoes", "broccoli"]
   },
   {
     "id": 3,
-    "name": "Grilled Chicken with Rice and Veggies",
-    "sides": ["rice", "steamed vegetables"]
+    "name": "Loaded Baked Potatoes",
+    "sides": ["chicken", "broccoli", "cheese"]
   },
   {
     "id": 4,
-    "name": "Tacos with Spanish Rice",
-    "sides": ["spanish rice", "refried beans"]
+    "name": "Red Beans and Rice with Sausage",
+    "sides": ["chicken wings", "cornbread"]
   },
   {
     "id": 5,
-    "name": "Fish and Chips",
-    "sides": ["french fries", "tartar sauce"]
+    "name": "White Chicken Chili",
+    "sides": ["tortilla chips", "sour cream"]
   },
   {
     "id": 6,
-    "name": "BBQ Ribs with Cornbread",
-    "sides": ["cornbread", "baked beans"]
+    "name": "Steak Tacos",
+    "sides": ["spanish rice"]
   },
   {
     "id": 7,
-    "name": "Chicken Stir Fry with Fried Rice",
-    "sides": ["fried rice", "egg roll"]
+    "name": "Chicken Tacos",
+    "sides": ["spanish rice"]
   },
   {
     "id": 8,
-    "name": "Steak with Mashed Potatoes",
-    "sides": ["mashed potatoes", "green beans"]
+    "name": "Fajitas",
+    "sides": ["rice", "beans"]
   },
   {
     "id": 9,
-    "name": "Salmon with Roasted Vegetables",
-    "sides": ["roasted vegetables", "quinoa"]
+    "name": "Meatloaf",
+    "sides": ["mashed potatoes", "corn"]
   },
   {
     "id": 10,
-    "name": "Chicken Parmesan with Pasta",
-    "sides": ["spaghetti", "garlic bread"]
+    "name": "Baked Chicken",
+    "sides": ["cabbage", "macaroni and cheese"]
   },
   {
     "id": 11,
-    "name": "Veggie Pizza with Salad",
-    "sides": ["caesar salad", "breadsticks"]
+    "name": "Chicken and Noodles",
+    "sides": ["cornbread"]
   },
   {
     "id": 12,
-    "name": "Pulled Pork Sandwich with Coleslaw",
-    "sides": ["coleslaw", "potato chips"]
+    "name": "Pepper Steak with Gravy",
+    "sides": ["rice", "broccoli", "biscuits"]
   },
   {
     "id": 13,
-    "name": "Shrimp Scampi with Pasta",
-    "sides": ["linguine", "garlic bread"]
+    "name": "Chicken Fajitas",
+    "sides": ["rice", "beans"]
   },
   {
     "id": 14,
-    "name": "Meatloaf with Mac and Cheese",
-    "sides": ["mac and cheese", "green beans"]
+    "name": "Chicken Strips",
+    "sides": ["sweet potato fries"]
   },
   {
     "id": 15,
-    "name": "Chicken Fajitas with Rice",
-    "sides": ["mexican rice", "refried beans"]
+    "name": "Taco Salad",
+    "sides": ["tortilla chips", "salsa"]
   },
   {
     "id": 16,
-    "name": "Lasagna with Garlic Bread",
-    "sides": ["garlic bread", "caesar salad"]
+    "name": "Garlic Parmesan Penne with Steak and Broccoli",
+    "sides": ["garlic bread"]
   },
   {
     "id": 17,
-    "name": "Grilled Pork Chops with Applesauce",
-    "sides": ["applesauce", "roasted potatoes"]
+    "name": "Beef and Broccoli",
+    "sides": ["rice"]
   },
   {
     "id": 18,
-    "name": "Teriyaki Chicken Bowl",
-    "sides": ["steamed rice", "stir-fried vegetables"]
+    "name": "Bourbon Chicken",
+    "sides": ["rice", "green beans"]
   },
   {
     "id": 19,
-    "name": "Fish Tacos with Black Beans",
-    "sides": ["black beans", "mexican street corn"]
+    "name": "Chicken Legs",
+    "sides": ["brussel sprouts", "dirty rice"]
   },
   {
     "id": 20,
-    "name": "Beef Enchiladas with Spanish Rice",
-    "sides": ["spanish rice", "refried beans"]
+    "name": "Chicken Breast",
+    "sides": ["succotash", "rice"]
   },
   {
     "id": 21,
-    "name": "Chicken Alfredo with Broccoli",
-    "sides": ["fettuccine", "steamed broccoli"]
+    "name": "Crunch Wraps",
+    "sides": ["chips", "salsa"]
   },
   {
     "id": 22,
-    "name": "Pot Roast with Vegetables",
-    "sides": ["roasted carrots", "mashed potatoes"]
+    "name": "Steak Chicken Potato Skillet",
+    "sides": ["vegetables"]
   },
   {
     "id": 23,
-    "name": "Baked Salmon with Quinoa",
-    "sides": ["quinoa", "asparagus"]
+    "name": "Hibachi",
+    "sides": ["fried rice", "yum yum sauce"]
   },
   {
     "id": 24,
-    "name": "Sloppy Joes with Fries",
-    "sides": ["french fries", "pickles"]
+    "name": "Philly Cheesesteak",
+    "sides": ["fries"]
   },
   {
     "id": 25,
-    "name": "Chicken Tikka Masala with Naan",
-    "sides": ["basmati rice", "naan bread"]
+    "name": "Hamburgers",
+    "sides": ["fries"]
   },
   {
     "id": 26,
-    "name": "Veggie Stir Fry with Tofu",
-    "sides": ["jasmine rice", "spring rolls"]
+    "name": "Chicken Tacos",
+    "sides": ["salsa", "guacamole"]
   },
   {
     "id": 27,
-    "name": "Pork Fried Rice",
-    "sides": ["egg rolls", "wonton soup"]
+    "name": "Lasagna",
+    "sides": ["salad"]
   },
   {
     "id": 28,
-    "name": "Chicken Wings with Potato Wedges",
-    "sides": ["potato wedges", "ranch dip"]
+    "name": "Pork Chops",
+    "sides": ["mashed potatoes", "green beans"]
   },
   {
     "id": 29,
-    "name": "Shrimp Fried Rice",
-    "sides": ["vegetable spring rolls", "sweet and sour sauce"]
+    "name": "Chicken Alfredo",
+    "sides": ["salad"]
   },
   {
     "id": 30,
-    "name": "Chili with Cornbread",
-    "sides": ["cornbread", "sour cream"]
+    "name": "Chicken Alfredo",
+    "sides": ["french bread"]
+  },
+  {
+    "id": 31,
+    "name": "Baked BBQ Chicken",
+    "sides": ["baked beans", "macaroni and cheese"]
+  },
+  {
+    "id": 32,
+    "name": "Steak",
+    "sides": ["baked potatoes", "salad"]
+  },
+  {
+    "id": 33,
+    "name": "Goulash",
+    "sides": ["garlic bread"]
   }
 ]

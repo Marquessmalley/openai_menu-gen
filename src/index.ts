@@ -3,7 +3,10 @@ import { sendEmail } from "./lib/nodemailer.js";
 import { ReadMenuFile, SaveMenu } from "./utils/menu-helper.js";
 import { GenerateMenuSchedule } from "./lib/ai/menu-generator.js";
 
-const subcribers: string[] = ["ksmalley77@gmail.com"];
+const subcribers: string[] = [
+  "ksmalley77@gmail.com",
+  "marquessmalley@gmail.com",
+];
 
 export default async function Program() {
   console.log("Generating monthly menu schedule...");
