@@ -10,12 +10,10 @@ Requirements:
 1. Use each meal name & sides EXACTLY as written
 2. Create 4 weeks of meals (Week 1-4, Monday-Friday each week = 20 meals total)
 3. Ensure variety - don't repeat the same meal within the same week
-4. Start the message with a funny joke about current USA events (sports, politics, news, tech, holidays)
-5. Format your response in a nice, clean structure that's easy to read
-6. Randomly order the meals throughout the entire month, not just for each weeks
+4. Format your response in a nice, clean structure that's easy to read
+5. Randomly order the meals throughout the entire month, not just for each weeks
 
 Format like this:
-[Funny joke here]
 
 WEEK 1
 Monday: [Menu Name] - Sides: [sides]

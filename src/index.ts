@@ -8,6 +8,8 @@ const subcribers: string[] = [
   "marquessmalley@gmail.com",
 ];
 
+// CLI TOOL TO GENERATE A SINGLE MENU
+
 export default async function Program() {
   console.log("Generating monthly menu schedule...");
 

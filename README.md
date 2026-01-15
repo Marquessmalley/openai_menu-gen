@@ -118,6 +118,81 @@ sequenceDiagram
     end
 ```
 
+## 🌐 Deployment Flow
+
+The system uses a fully automated CI/CD pipeline that triggers deployments whenever a new menu is generated:
+
+```mermaid
+flowchart TB
+    subgraph Trigger["⏰ Monthly Trigger"]
+        Cron["GitHub Actions Cron<br/>1st of month @ 9 AM UTC"]
+    end
+
+    subgraph CLI["🔧 CLI Batch Job"]
+        Generate["Generate Menu<br/>(OpenAI GPT-4o-mini)"]
+        Save["Save to data/output/<br/>January-2026-menu.txt"]
+        Commit["git add + git commit"]
+        Push["git push"]
+    end
+
+    subgraph GitHub["📦 GitHub Repository"]
+        Repo["Main Branch<br/>(contains new menu file)"]
+        Webhook1["Webhook → Vercel"]
+        Webhook2["Webhook → Railway"]
+    end
+
+    subgraph Deployments["🚀 Auto-Deploy"]
+        subgraph Vercel["Vercel (Frontend)"]
+            VBuild["Build client/"]
+            VDeploy["Deploy to CDN"]
+            VLive["✨ menu.vercel.app"]
+        end
+        subgraph Railway["Railway (Backend API)"]
+            RBuild["Build api/"]
+            RDeploy["Deploy Node Server"]
+            RLive["✨ api.railway.app"]
+        end
+    end
+
+    subgraph User["👤 End User"]
+        Browser["Browser"]
+    end
+
+    Cron --> Generate
+    Generate --> Save
+    Save --> Commit
+    Commit --> Push
+    Push --> Repo
+    Repo --> Webhook1
+    Repo --> Webhook2
+    Webhook1 --> VBuild
+    VBuild --> VDeploy
+    VDeploy --> VLive
+    Webhook2 --> RBuild
+    RBuild --> RDeploy
+    RDeploy --> RLive
+    Browser -->|"Visit website"| VLive
+    VLive -->|"GET /api/menu/current"| RLive
+    RLive -->|"JSON response"| VLive
+
+    style Cron fill:#2ea44f,color:#fff
+    style Push fill:#f97316,color:#fff
+    style VLive fill:#000,color:#fff
+    style RLive fill:#7c3aed,color:#fff
+    style Browser fill:#3b82f6,color:#fff
+```
+
+### Deployment Flow Summary
+
+| Step | Action | Result |
+|------|--------|--------|
+| 1️⃣ | GitHub Actions triggers on 1st of month | CLI batch job starts |
+| 2️⃣ | CLI generates menu via OpenAI | New menu saved to `data/output/` |
+| 3️⃣ | CLI commits and pushes to repo | New commit on main branch |
+| 4️⃣ | Push triggers Vercel webhook | Frontend auto-redeploys (~30s) |
+| 5️⃣ | Push triggers Railway webhook | Backend API auto-redeploys (~1min) |
+| 6️⃣ | User visits website | Sees the latest month's menu |
+
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -167,10 +242,7 @@ npm run start
 Edit the `subcribers` array in `src/index.ts`:
 
 ```typescript
-const subcribers: string[] = [
-  "email1@example.com",
-  "email2@example.com"
-];
+const subcribers: string[] = ["email1@example.com", "email2@example.com"];
 ```
 
 ### Customizing the Menu
@@ -194,11 +266,11 @@ The application runs automatically via GitHub Actions:
 
 ### Required GitHub Secrets
 
-| Secret | Description |
-|--------|-------------|
-| `OPEN_AI_KEY` | Your OpenAI API key |
-| `EMAIL` | Gmail address for sending |
-| `PASSWORD` | Gmail App Password |
+| Secret        | Description               |
+| ------------- | ------------------------- |
+| `OPEN_AI_KEY` | Your OpenAI API key       |
+| `EMAIL`       | Gmail address for sending |
+| `PASSWORD`    | Gmail App Password        |
 
 ## 🛠️ Tech Stack
 
@@ -212,12 +284,13 @@ The application runs automatically via GitHub Actions:
 ## 📧 Sample Output
 
 Each generated menu includes:
+
 - A funny, topical joke about current events
 - 4 weeks of Monday-Friday dinner schedules
 - Meal names with their accompanying sides
 
 ```
-Why did the turkey run for president? Because it wanted to be the one 
+Why did the turkey run for president? Because it wanted to be the one
 getting pardoned this Thanksgiving! 🦃
 
 WEEK 1
@@ -236,5 +309,4 @@ Marquess Smalley
 
 ---
 
-*Made with ❤️ and AI*
-
+_Made with ❤️ and AI_
