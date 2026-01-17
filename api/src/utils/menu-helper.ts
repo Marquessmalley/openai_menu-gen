@@ -17,11 +17,23 @@ export const ReadMenuFile = async () => {
   // Navigate to root project's data folder
   const menuPath = path.join(DATA_DIR, "menu.json");
 
-    try {
-      const content = await fs.promises.readFile(menuPath, { encoding: "utf-8" });
-      return JSON.parse(content);
-    } catch (err) {
-      console.log("There was an error reading the file: ", err);
-      throw err;
-    }
+  try {
+    const content = await fs.promises.readFile(menuPath, { encoding: "utf-8" });
+    return JSON.parse(content);
+  } catch (err) {
+    console.log("There was an error reading the file: ", err);
+    throw err;
+  }
 };
+
+export const ReadCurrentMonthMenu = async (month: string, year: string) => {
+  try {
+    const menuPath = path.join(DATA_DIR, "output", `${month}-${year}-menu.txt`);
+    const content = await fs.promises.readFile(menuPath, { encoding: "utf-8" });
+    console.log(typeof content)
+    return content;
+  } catch (err) {
+    console.log("There was an error reading the current month menu file: ", err);
+    throw err;
+  }
+}
