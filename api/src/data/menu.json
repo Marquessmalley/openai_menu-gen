@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "name": "Chili",
+    "sides": ["crackers", "cornbread"]
+  },
+  {
+    "id": 2,
+    "name": "Steak Bites",
+    "sides": ["sweet potatoes", "broccoli"]
+  },
+  {
+    "id": 3,
+    "name": "Loaded Baked Potatoes",
+    "sides": ["chicken", "broccoli", "cheese"]
+  },
+  {
+    "id": 4,
+    "name": "Red Beans and Rice with Sausage",
+    "sides": ["chicken wings", "cornbread"]
+  },
+  {
+    "id": 5,
+    "name": "White Chicken Chili",
+    "sides": ["tortilla chips", "sour cream"]
+  },
+  {
+    "id": 6,
+    "name": "Steak Tacos",
+    "sides": ["spanish rice"]
+  },
+  {
+    "id": 7,
+    "name": "Chicken Tacos",
+    "sides": ["spanish rice"]
+  },
+  {
+    "id": 8,
+    "name": "Fajitas",
+    "sides": ["rice", "beans"]
+  },
+  {
+    "id": 9,
+    "name": "Meatloaf",
+    "sides": ["mashed potatoes", "corn"]
+  },
+  {
+    "id": 10,
+    "name": "Baked Chicken",
+    "sides": ["cabbage", "macaroni and cheese"]
+  },
+  {
+    "id": 11,
+    "name": "Chicken and Noodles",
+    "sides": ["cornbread"]
+  },
+  {
+    "id": 12,
+    "name": "Pepper Steak with Gravy",
+    "sides": ["rice", "broccoli", "biscuits"]
+  },
+  {
+    "id": 13,
+    "name": "Chicken Fajitas",
+    "sides": ["rice", "beans"]
+  },
+  {
+    "id": 14,
+    "name": "Chicken Strips",
+    "sides": ["sweet potato fries"]
+  },
+  {
+    "id": 15,
+    "name": "Taco Salad",
+    "sides": ["tortilla chips", "salsa"]
+  },
+  {
+    "id": 16,
+    "name": "Garlic Parmesan Penne with Steak and Broccoli",
+    "sides": ["garlic bread"]
+  },
+  {
+    "id": 17,
+    "name": "Beef and Broccoli",
+    "sides": ["rice"]
+  },
+  {
+    "id": 18,
+    "name": "Bourbon Chicken",
+    "sides": ["rice", "green beans"]
+  },
+  {
+    "id": 19,
+    "name": "Chicken Legs",
+    "sides": ["brussel sprouts", "dirty rice"]
+  },
+  {
+    "id": 20,
+    "name": "Chicken Breast",
+    "sides": ["succotash", "rice"]
+  },
+  {
+    "id": 21,
+    "name": "Crunch Wraps",
+    "sides": ["chips", "salsa"]
+  },
+  {
+    "id": 22,
+    "name": "Steak Chicken Potato Skillet",
+    "sides": ["vegetables"]
+  },
+  {
+    "id": 23,
+    "name": "Hibachi",
+    "sides": ["fried rice", "yum yum sauce"]
+  },
+  {
+    "id": 24,
+    "name": "Philly Cheesesteak",
+    "sides": ["fries"]
+  },
+  {
+    "id": 25,
+    "name": "Hamburgers",
+    "sides": ["fries"]
+  },
+  {
+    "id": 26,
+    "name": "Chicken Tacos",
+    "sides": ["salsa", "guacamole"]
+  },
+  {
+    "id": 27,
+    "name": "Lasagna",
+    "sides": ["salad"]
+  },
+  {
+    "id": 28,
+    "name": "Pork Chops",
+    "sides": ["mashed potatoes", "green beans"]
+  },
+  {
+    "id": 29,
+    "name": "Chicken Alfredo",
+    "sides": ["salad"]
+  },
+  {
+    "id": 30,
+    "name": "Chicken Alfredo",
+    "sides": ["french bread"]
+  },
+  {
+    "id": 31,
+    "name": "Baked BBQ Chicken",
+    "sides": ["baked beans", "macaroni and cheese"]
+  },
+  {
+    "id": 32,
+    "name": "Steak",
+    "sides": ["baked potatoes", "salad"]
+  },
+  {
+    "id": 33,
+    "name": "Goulash",
+    "sides": ["garlic bread"]
+  }
+]
