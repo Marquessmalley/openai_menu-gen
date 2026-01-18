@@ -55,7 +55,6 @@ IMPORTANT:
       temperature: 0.7,
     });
 
-    console.log(response);
     const parsed: MenuScheduleResponse = JSON.parse(response.output_text);
     return parsed;
   } catch (err) {
