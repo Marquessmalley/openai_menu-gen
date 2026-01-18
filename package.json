@@ -8,7 +8,7 @@
     "start": "node dist/index.js",
     "dev": "tsc -w",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:api": "cp -r src/data api/src/data && cd api && npm run build"
+    "build:api": "rm -rf api/src/data && cp -r src/data api/src/data && cd api && npm run build"
   },
   "author": "",
   "license": "ISC",

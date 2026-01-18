@@ -1,5 +1,11 @@
 ### Get menu list
 http://localhost:3000/api/menu
 
-### Get current month menu
-http://localhost:3000/api/menu/current?month=January&year=2026
+### Get current month menu list
+http://localhost:3000/api/menu/current
+
+### Get month menu
+http://localhost:3000/api/menu/January/2026
+
+### Get month menu
+http://localhost:3000/api/menu/months

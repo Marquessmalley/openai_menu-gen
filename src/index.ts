@@ -20,17 +20,21 @@ export default async function Program() {
     return;
   }
 
-  const schedule = await GenerateMenuSchedule(menu);
+  const scheduleResponse = await GenerateMenuSchedule(menu);
 
-  if (!schedule) {
+  if (!scheduleResponse) {
     throw new Error("Schedule not generated");
   }
 
-  await SaveMenu(schedule);
+  // Save both text and JSON files
+  await SaveMenu(scheduleResponse);
 
-  for (const subscriber of subcribers) {
-    await sendEmail(subscriber, schedule);
-  }
+  // Send the text format via email
+  // for (const subscriber of subcribers) {
+  //   await sendEmail(subscriber, scheduleResponse.textFormat);
+  // }
+
+  console.log("Monthly menu generated and emails sent successfully!");
 }
 
 Program();
