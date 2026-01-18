@@ -13,7 +13,13 @@ interface WeekSchedule {
   days: DaySchedule[];
 }
 
+interface MonthMenu {
+  month: string;
+  year: string;
+  schedule: WeekSchedule[];
+}
+
 interface MenuScheduleResponse {
   textFormat: string;
-  schedule: WeekSchedule[];
+  schedule: MonthMenu;
 }

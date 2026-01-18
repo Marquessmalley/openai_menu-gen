@@ -1,216 +1,219 @@
-[
-  {
-    "week": 1,
-    "days": [
-      {
-        "day": "Monday",
-        "meal": {
-          "name": "Chili",
-          "sides": [
-            "crackers",
-            "cornbread"
-          ]
+{
+  "month": "January",
+  "year": "2026",
+  "schedule": [
+    {
+      "week": 1,
+      "days": [
+        {
+          "day": "Monday",
+          "meal": {
+            "name": "Chili",
+            "sides": [
+              "crackers",
+              "cornbread"
+            ]
+          }
+        },
+        {
+          "day": "Tuesday",
+          "meal": {
+            "name": "Meatloaf",
+            "sides": [
+              "mashed potatoes",
+              "corn"
+            ]
+          }
+        },
+        {
+          "day": "Wednesday",
+          "meal": {
+            "name": "Chicken Tacos",
+            "sides": [
+              "spanish rice"
+            ]
+          }
+        },
+        {
+          "day": "Thursday",
+          "meal": {
+            "name": "Steak Bites",
+            "sides": [
+              "sweet potatoes",
+              "broccoli"
+            ]
+          }
+        },
+        {
+          "day": "Friday",
+          "meal": {
+            "name": "White Chicken Chili",
+            "sides": [
+              "tortilla chips",
+              "sour cream"
+            ]
+          }
         }
-      },
-      {
-        "day": "Tuesday",
-        "meal": {
-          "name": "Meatloaf",
-          "sides": [
-            "mashed potatoes",
-            "corn"
-          ]
+      ]
+    },
+    {
+      "week": 2,
+      "days": [
+        {
+          "day": "Monday",
+          "meal": {
+            "name": "Fajitas",
+            "sides": [
+              "rice",
+              "beans"
+            ]
+          }
+        },
+        {
+          "day": "Tuesday",
+          "meal": {
+            "name": "Baked Chicken",
+            "sides": [
+              "cabbage",
+              "macaroni and cheese"
+            ]
+          }
+        },
+        {
+          "day": "Wednesday",
+          "meal": {
+            "name": "Chicken Alfredo",
+            "sides": [
+              "salad"
+            ]
+          }
+        },
+        {
+          "day": "Thursday",
+          "meal": {
+            "name": "Red Beans and Rice with Sausage",
+            "sides": [
+              "chicken wings",
+              "cornbread"
+            ]
+          }
+        },
+        {
+          "day": "Friday",
+          "meal": {
+            "name": "Beef and Broccoli",
+            "sides": [
+              "rice"
+            ]
+          }
         }
-      },
-      {
-        "day": "Wednesday",
-        "meal": {
-          "name": "Chicken Tacos",
-          "sides": [
-            "salsa",
-            "guacamole"
-          ]
+      ]
+    },
+    {
+      "week": 3,
+      "days": [
+        {
+          "day": "Monday",
+          "meal": {
+            "name": "Garlic Parmesan Penne with Steak and Broccoli",
+            "sides": [
+              "garlic bread"
+            ]
+          }
+        },
+        {
+          "day": "Tuesday",
+          "meal": {
+            "name": "Chicken Strips",
+            "sides": [
+              "sweet potato fries"
+            ]
+          }
+        },
+        {
+          "day": "Wednesday",
+          "meal": {
+            "name": "Taco Salad",
+            "sides": [
+              "tortilla chips",
+              "salsa"
+            ]
+          }
+        },
+        {
+          "day": "Thursday",
+          "meal": {
+            "name": "Steak Tacos",
+            "sides": [
+              "spanish rice"
+            ]
+          }
+        },
+        {
+          "day": "Friday",
+          "meal": {
+            "name": "Goulash",
+            "sides": [
+              "garlic bread"
+            ]
+          }
         }
-      },
-      {
-        "day": "Thursday",
-        "meal": {
-          "name": "Steak Bites",
-          "sides": [
-            "sweet potatoes",
-            "broccoli"
-          ]
+      ]
+    },
+    {
+      "week": 4,
+      "days": [
+        {
+          "day": "Monday",
+          "meal": {
+            "name": "Chicken Legs",
+            "sides": [
+              "brussel sprouts",
+              "dirty rice"
+            ]
+          }
+        },
+        {
+          "day": "Tuesday",
+          "meal": {
+            "name": "Pork Chops",
+            "sides": [
+              "mashed potatoes",
+              "green beans"
+            ]
+          }
+        },
+        {
+          "day": "Wednesday",
+          "meal": {
+            "name": "Baked BBQ Chicken",
+            "sides": [
+              "baked beans",
+              "macaroni and cheese"
+            ]
+          }
+        },
+        {
+          "day": "Thursday",
+          "meal": {
+            "name": "Loaded Baked Potatoes",
+            "sides": [
+              "chicken",
+              "broccoli",
+              "cheese"
+            ]
+          }
+        },
+        {
+          "day": "Friday",
+          "meal": {
+            "name": "Philly Cheesesteak",
+            "sides": [
+              "fries"
+            ]
+          }
         }
-      },
-      {
-        "day": "Friday",
-        "meal": {
-          "name": "Baked BBQ Chicken",
-          "sides": [
-            "baked beans",
-            "macaroni and cheese"
-          ]
-        }
-      }
-    ]
-  },
-  {
-    "week": 2,
-    "days": [
-      {
-        "day": "Monday",
-        "meal": {
-          "name": "Red Beans and Rice with Sausage",
-          "sides": [
-            "chicken wings",
-            "cornbread"
-          ]
-        }
-      },
-      {
-        "day": "Tuesday",
-        "meal": {
-          "name": "Chicken Fajitas",
-          "sides": [
-            "rice",
-            "beans"
-          ]
-        }
-      },
-      {
-        "day": "Wednesday",
-        "meal": {
-          "name": "White Chicken Chili",
-          "sides": [
-            "tortilla chips",
-            "sour cream"
-          ]
-        }
-      },
-      {
-        "day": "Thursday",
-        "meal": {
-          "name": "Garlic Parmesan Penne with Steak and Broccoli",
-          "sides": [
-            "garlic bread"
-          ]
-        }
-      },
-      {
-        "day": "Friday",
-        "meal": {
-          "name": "Taco Salad",
-          "sides": [
-            "tortilla chips",
-            "salsa"
-          ]
-        }
-      }
-    ]
-  },
-  {
-    "week": 3,
-    "days": [
-      {
-        "day": "Monday",
-        "meal": {
-          "name": "Chicken Alfredo",
-          "sides": [
-            "salad"
-          ]
-        }
-      },
-      {
-        "day": "Tuesday",
-        "meal": {
-          "name": "Fajitas",
-          "sides": [
-            "rice",
-            "beans"
-          ]
-        }
-      },
-      {
-        "day": "Wednesday",
-        "meal": {
-          "name": "Pork Chops",
-          "sides": [
-            "mashed potatoes",
-            "green beans"
-          ]
-        }
-      },
-      {
-        "day": "Thursday",
-        "meal": {
-          "name": "Steak",
-          "sides": [
-            "baked potatoes",
-            "salad"
-          ]
-        }
-      },
-      {
-        "day": "Friday",
-        "meal": {
-          "name": "Goulash",
-          "sides": [
-            "garlic bread"
-          ]
-        }
-      }
-    ]
-  },
-  {
-    "week": 4,
-    "days": [
-      {
-        "day": "Monday",
-        "meal": {
-          "name": "Baked Chicken",
-          "sides": [
-            "cabbage",
-            "macaroni and cheese"
-          ]
-        }
-      },
-      {
-        "day": "Tuesday",
-        "meal": {
-          "name": "Hamburgers",
-          "sides": [
-            "fries"
-          ]
-        }
-      },
-      {
-        "day": "Wednesday",
-        "meal": {
-          "name": "Chicken and Noodles",
-          "sides": [
-            "cornbread"
-          ]
-        }
-      },
-      {
-        "day": "Thursday",
-        "meal": {
-          "name": "Beef and Broccoli",
-          "sides": [
-            "rice"
-          ]
-        }
-      },
-      {
-        "day": "Friday",
-        "meal": {
-          "name": "Hibachi",
-          "sides": [
-            "fried rice",
-            "yum yum sauce"
-          ]
-        }
-      }
-    ]
-  }
-]
+      ]
+    }
+  ]
+}

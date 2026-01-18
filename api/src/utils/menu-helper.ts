@@ -26,7 +26,7 @@ export const ReadMenuFile = async (): Promise<Menu[]> => {
   }
 };
 
-export const ReadMonthMenu = async (month: string, year: string): Promise<WeekSchedule[]> => {
+export const ReadMonthMenu = async (month: string, year: string): Promise<MonthMenu> => {
   try {
     const menuPath = path.join(DATA_DIR, "output", `${month}-${year}-menu.json`);
     const content = await fs.promises.readFile(menuPath, { encoding: "utf-8" });
@@ -46,20 +46,11 @@ export const ReadMonthsMenu = async (): Promise<MonthMenu[]> => {
 
 
     // Read all files in parallel
-    const allMenus = await Promise.all(
+    const allMenus: MonthMenu[] = await Promise.all(
       jsonFiles.map(async (file) => {
         const filePath = path.join(menuPath, file);
         const content = await fs.promises.readFile(filePath, { encoding: "utf-8" });
-        const schedule: WeekSchedule[] = JSON.parse(content);
-
-        // Extract month and year from filename (e.g., "January-2026-menu.json")
-        const [month, year] = file.replace('-menu.json', '').split('-');
-
-        return {
-          month,
-          year,
-          schedule
-        };
+        return JSON.parse(content);
       })
     );
 
