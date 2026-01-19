@@ -5,6 +5,9 @@ on:
     workflows: ["Execute Monthly Menu Schedule"]
     types: [completed]
 
+    workflow_dispatch:
+
+
 permissions:
   contents: write
 
