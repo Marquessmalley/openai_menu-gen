@@ -28,29 +28,29 @@
         {
           "day": "Wednesday",
           "meal": {
-            "name": "Chicken Tacos",
+            "name": "Garlic Parmesan Penne with Steak and Broccoli",
             "sides": [
-              "spanish rice"
+              "garlic bread"
             ]
           }
         },
         {
           "day": "Thursday",
           "meal": {
-            "name": "Steak Bites",
+            "name": "Chicken Fajitas",
             "sides": [
-              "sweet potatoes",
-              "broccoli"
+              "rice",
+              "beans"
             ]
           }
         },
         {
           "day": "Friday",
           "meal": {
-            "name": "White Chicken Chili",
+            "name": "Fajitas",
             "sides": [
-              "tortilla chips",
-              "sour cream"
+              "rice",
+              "beans"
             ]
           }
         }
@@ -62,20 +62,19 @@
         {
           "day": "Monday",
           "meal": {
-            "name": "Fajitas",
+            "name": "White Chicken Chili",
             "sides": [
-              "rice",
-              "beans"
+              "tortilla chips",
+              "sour cream"
             ]
           }
         },
         {
           "day": "Tuesday",
           "meal": {
-            "name": "Baked Chicken",
+            "name": "Steak Tacos",
             "sides": [
-              "cabbage",
-              "macaroni and cheese"
+              "spanish rice"
             ]
           }
         },
@@ -91,19 +90,21 @@
         {
           "day": "Thursday",
           "meal": {
-            "name": "Red Beans and Rice with Sausage",
+            "name": "Pork Chops",
             "sides": [
-              "chicken wings",
-              "cornbread"
+              "mashed potatoes",
+              "green beans"
             ]
           }
         },
         {
           "day": "Friday",
           "meal": {
-            "name": "Beef and Broccoli",
+            "name": "Loaded Baked Potatoes",
             "sides": [
-              "rice"
+              "chicken",
+              "broccoli",
+              "cheese"
             ]
           }
         }
@@ -115,37 +116,40 @@
         {
           "day": "Monday",
           "meal": {
-            "name": "Garlic Parmesan Penne with Steak and Broccoli",
+            "name": "Steak Bites",
             "sides": [
-              "garlic bread"
+              "sweet potatoes",
+              "broccoli"
             ]
           }
         },
         {
           "day": "Tuesday",
           "meal": {
-            "name": "Chicken Strips",
+            "name": "Baked BBQ Chicken",
             "sides": [
-              "sweet potato fries"
+              "baked beans",
+              "macaroni and cheese"
             ]
           }
         },
         {
           "day": "Wednesday",
           "meal": {
-            "name": "Taco Salad",
+            "name": "Red Beans and Rice with Sausage",
             "sides": [
-              "tortilla chips",
-              "salsa"
+              "chicken wings",
+              "cornbread"
             ]
           }
         },
         {
           "day": "Thursday",
           "meal": {
-            "name": "Steak Tacos",
+            "name": "Chicken Legs",
             "sides": [
-              "spanish rice"
+              "brussel sprouts",
+              "dirty rice"
             ]
           }
         },
@@ -166,50 +170,46 @@
         {
           "day": "Monday",
           "meal": {
-            "name": "Chicken Legs",
+            "name": "Chicken and Noodles",
             "sides": [
-              "brussel sprouts",
-              "dirty rice"
+              "cornbread"
             ]
           }
         },
         {
           "day": "Tuesday",
           "meal": {
-            "name": "Pork Chops",
+            "name": "Beef and Broccoli",
             "sides": [
-              "mashed potatoes",
-              "green beans"
+              "rice"
             ]
           }
         },
         {
           "day": "Wednesday",
           "meal": {
-            "name": "Baked BBQ Chicken",
+            "name": "Hamburger",
             "sides": [
-              "baked beans",
-              "macaroni and cheese"
+              "fries"
             ]
           }
         },
         {
           "day": "Thursday",
           "meal": {
-            "name": "Loaded Baked Potatoes",
+            "name": "Philly Cheesesteak",
             "sides": [
-              "chicken",
-              "broccoli",
-              "cheese"
+              "fries"
             ]
           }
         },
         {
           "day": "Friday",
           "meal": {
-            "name": "Philly Cheesesteak",
+            "name": "Baked Chicken",
             "sides": [
-              "fries"
+              "cabbage",
+              "macaroni and cheese"
             ]
           }
         }
