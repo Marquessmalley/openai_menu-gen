@@ -1,0 +1,40 @@
+name: Deploy API to Render 
+
+on: 
+  workflow_run:
+    workflows: ["Execute Monthly Menu Schedule"]
+    types: [completed]
+
+permissions:
+  contents: write
+
+jobs:
+  deploy-api:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build API
+        run: npm run build:api
+
+      - name: Commit API data changes
+        run: |
+          git config --local user.email "marquessmalley@gmail.com"
+          git config --local user.name "Marquessmalley"
+          git add api/src/data/
+          git diff --staged --quiet || git commit -m "🔄 Sync API data for $(date +'%B %Y')"
+          git push
+
+      - name: Trigger Render Deploy
+        run: curl -X POST "${{ secrets.RENDER_DEPLOY_HOOK }}"
+
