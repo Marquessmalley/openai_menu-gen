@@ -37,7 +37,7 @@ export default async function Dashboard() {
         <div className="flex-1 min-h-0 grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6 mt-6">
           {/* Left column - 2/3 width */}
           <div className="flex flex-col min-h-0 lg:col-span-2">
-            <div className="h-1/2 min-h-[300px] mb-4 sm:mb-5 md:mb-6">
+            <div className="mb-4 sm:mb-5 md:mb-6">
               <CurrentMealWidget />
             </div>
             <div className="flex-1 min-h-0">
