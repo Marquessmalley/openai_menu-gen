@@ -1,14 +1,27 @@
+import {
+  TotalRecipeWidget,
+  CurrentMealWidget,
+  SideDishesWidget,
+} from "@/components/Widgets";
+
 export default async function Dashboard() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <h1 className="text-8xl font-bold text-zinc-900 dark:text-white sm:text-2xl">
-          Welcome to{" "}
-          <span className="text-blue-600">Monthly Menu Schedule Dashboard</span>
-        </h1>
-        <p className="mt-6 text-lg text-zinc-700 dark:text-zinc-300 sm:text-xl">
-          Schedules monthly menus effortlessly using AI.
-        </p>
+    <div className="min-h-screen bg-zinc-100 font-sans">
+      <main className="w-full max-w-[2000px] mx-auto min-h-screen p-4 sm:p-5 md:p-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 md:gap-6">
+          <div>
+            <TotalRecipeWidget />
+          </div>
+          <div>
+            <CurrentMealWidget />
+          </div>
+          <div>
+            <SideDishesWidget />
+          </div>
+          <div>
+            <CurrentMealWidget />
+          </div>
+        </div>
       </main>
     </div>
   );
