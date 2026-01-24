@@ -1,26 +1,11 @@
 // components/Widgets/RecipeCatalogWidget/RecipeCatalogWidget.tsx
 import { BookOpen } from "lucide-react";
 import { Chip } from "@/components/UI/Chip";
+import { RecipeCatalogWidgetProps } from "@/types";
 
-// Mock data - expanded with more items
-const menuItems = [
-  { id: 1, name: "Baked Chicken", sides: ["cabbage", "macaroni and cheese"] },
-  { id: 2, name: "Grilled Salmon", sides: ["asparagus", "wild rice"] },
-  { id: 3, name: "Vegetable Stir Fry", sides: ["tofu", "brown rice"] },
-  { id: 4, name: "Beef Tacos", sides: ["guacamole", "refried beans"] },
-  { id: 5, name: "Pasta Carbonara", sides: ["garlic bread", "caesar salad"] },
-  {
-    id: 6,
-    name: "Grilled Cheese",
-    sides: ["tomato soup", "sweet potato fries"],
-  },
-  { id: 7, name: "Chicken Curry", sides: ["basmati rice", "naan bread"] },
-  { id: 8, name: "Caesar Salad", sides: ["grilled chicken", "croutons"] },
-  { id: 9, name: "Beef Burger", sides: ["sweet potato fries", "coleslaw"] },
-  { id: 10, name: "Mushroom Risotto", sides: ["parmesan", "asparagus"] },
-];
-
-export default function RecipeCatalogWidget() {
+export default function RecipeCatalogWidget({
+  menuItems,
+}: RecipeCatalogWidgetProps) {
   return (
     <div className="h-full flex flex-col bg-white rounded-2xl shadow-sm overflow-hidden">
       {/* Header */}

@@ -1,12 +1,19 @@
 import WidgetCard from "@/components/UI/cards/WidgetCard";
+import { CurrentMonthMenuWidgetProps } from "@/types";
+import { countMealsInMonth } from "@/lib/menu-utils";
+import { getCurrentDateInfo } from "@/lib/date-utils";
 
-export default function MealsThisMonth() {
+export default function MealsThisMonth({
+  currentMonthMenu,
+}: CurrentMonthMenuWidgetProps) {
+  const numOfMeals = countMealsInMonth(currentMonthMenu);
+  const { month, year } = getCurrentDateInfo();
   return (
     <div>
       <WidgetCard
         title="Meals This Month"
-        stat={20}
-        subtitle="January 2026"
+        stat={numOfMeals}
+        subtitle={`${month} ${year}`}
         icon={
           <svg
             xmlns="http://www.w3.org/2000/svg"

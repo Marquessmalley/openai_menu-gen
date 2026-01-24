@@ -1,15 +1,20 @@
 import { Calendar, ArrowRight } from "lucide-react";
+import { getCurrentDateInfo } from "@/lib/date-utils";
+import { getCurrentMeal } from "@/lib/menu-utils";
+import { CurrentMonthMenu } from "@/types";
 
-export default function CurrentMealWidget() {
-  const currentDate = new Date();
-  const currentDay = currentDate.toLocaleDateString("en-US", {
-    weekday: "long",
-  });
-  const currentMonth = currentDate.toLocaleDateString("en-US", {
-    month: "long",
-  });
-  const currentYear = currentDate.getFullYear();
-  const currentWeek = Math.ceil(currentDate.getDate() / 7);
+export default function CurrentMealWidget({
+  monthMenu,
+}: {
+  monthMenu: CurrentMonthMenu;
+}) {
+  const {
+    day: currentDay,
+    month: currentMonth,
+    year: currentYear,
+    week: currentWeek,
+  } = getCurrentDateInfo();
+  const meal = getCurrentMeal(monthMenu);
 
   return (
     <div className="w-full rounded-2xl bg-white shadow-sm overflow-hidden">
@@ -41,12 +46,20 @@ export default function CurrentMealWidget() {
         </div>
 
         {/* Meal Card */}
-        <div className="bg-gray-50 rounded-xl p-4 mb-4 border border-gray-100">
-          <h3 className="font-semibold text-gray-900">Baked Chicken</h3>
-          <p className="text-sm text-gray-500">
-            with cabbage & macaroni and cheese
-          </p>
-        </div>
+        {meal ? (
+          <div className="bg-gray-50 rounded-xl p-4 mb-4 border border-gray-100">
+            <h3 className="font-semibold text-gray-900">Baked Chicken</h3>
+            <p className="text-sm text-gray-500">
+              with cabbage & macaroni and cheese
+            </p>
+          </div>
+        ) : (
+          <div className="bg-gray-50 rounded-xl p-4 mb-4 border border-gray-100">
+            <h3 className="font-semibold text-gray-900">
+              No meal planned for today
+            </h3>
+          </div>
+        )}
 
         {/* Week Navigation */}
         <div className="flex justify-between mt-6">

@@ -1,16 +1,11 @@
 // components/UI/cards/WeekCard.tsx
 import { Chip } from "../Chip";
-
-interface DayMeal {
-  day: string;
-  meal: string;
-  sides: string[];
-}
+import { DayMenu } from "@/types";
 
 interface WeekCardProps {
   weekNumber: number;
   isCurrent?: boolean;
-  days: DayMeal[];
+  days: DayMenu[];
 }
 
 export function WeekCard({
@@ -18,14 +13,19 @@ export function WeekCard({
   isCurrent = false,
   days,
 }: WeekCardProps) {
-  // Day color mapping with more vibrant colors
+  // Day color mapping with vibrant colors for each day of the week
   const dayColors: Record<string, { bg: string; text: string }> = {
-    Mon: { bg: "bg-blue-100", text: "text-blue-800" },
-    Tue: { bg: "bg-purple-100", text: "text-purple-800" },
-    Wed: { bg: "bg-green-100", text: "text-green-800" },
-    Thu: { bg: "bg-yellow-100", text: "text-yellow-800" },
-    Fri: { bg: "bg-red-100", text: "text-red-800" },
+    Monday: { bg: "bg-blue-100", text: "text-blue-800" },
+    Tuesday: { bg: "bg-purple-100", text: "text-purple-800" },
+    Wednesday: { bg: "bg-green-100", text: "text-green-800" },
+    Thursday: { bg: "bg-yellow-100", text: "text-yellow-800" },
+    Friday: { bg: "bg-red-100", text: "text-red-800" },
+    Saturday: { bg: "bg-pink-100", text: "text-pink-800" },
+    Sunday: { bg: "bg-indigo-100", text: "text-indigo-800" },
   };
+
+  // Get the first three letters of the day for the chip
+  const getDayAbbreviation = (day: string) => day.substring(0, 3);
 
   return (
     <div className="h-full flex flex-col bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-md transition-shadow">
@@ -55,20 +55,22 @@ export function WeekCard({
                 <Chip
                   className={`${colors.bg} ${colors.text} text-xs font-medium`}
                 >
-                  {day.day}
+                  {getDayAbbreviation(day.day)}
                 </Chip>
                 <div className="flex-1 min-w-0">
-                  <p className="text-sm font-medium text-gray-900">
-                    {day.meal}
-                  </p>
-                  <div className="mt-1">
-                    {day.sides.map((side, i) => (
-                      <span key={i} className="text-xs text-gray-500">
-                        {side}
-                        {i < day.sides.length - 1 ? " • " : ""}
-                      </span>
-                    ))}
+                  <div className="text-sm font-medium text-gray-900">
+                    {day.meal.name}
                   </div>
+                  {day.meal.sides && day.meal.sides.length > 0 && (
+                    <div className="mt-1">
+                      {day.meal.sides.map((side: string, i: number) => (
+                        <span key={i} className="text-xs text-gray-500">
+                          {side}
+                          {i < day.meal.sides!.length - 1 ? " • " : ""}
+                        </span>
+                      ))}
+                    </div>
+                  )}
                 </div>
               </div>
             );

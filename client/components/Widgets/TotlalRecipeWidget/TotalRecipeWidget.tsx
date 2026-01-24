@@ -1,10 +1,11 @@
 import React from "react";
 import WidgetCard from "@/components/UI/cards/WidgetCard";
-export default function TotalRecipeWidget() {
+import { TotalRecipeWidgetProps } from "@/types";
+export default function TotalRecipeWidget({ stat }: TotalRecipeWidgetProps) {
   return (
     <WidgetCard
       title="Total Recipes"
-      stat={31}
+      stat={stat}
       subtitle="In your catalog"
       icon={
         <svg

@@ -1,11 +1,11 @@
 import WidgetCard from "@/components/UI/cards/WidgetCard";
-
-export default function SideDishesWidget() {
+import { SideDishesWidgetProps } from "@/types";
+export default function SideDishesWidget({ stat }: SideDishesWidgetProps) {
   return (
     <div>
       <WidgetCard
         title="Side Dishes"
-        stat={52}
+        stat={stat}
         subtitle="32 unique options"
         bgColor="bg-orange-100"
         iconBgColor="bg-[#f59f0a]"

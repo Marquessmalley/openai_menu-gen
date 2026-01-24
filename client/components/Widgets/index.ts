@@ -4,6 +4,7 @@ import SideDishesWidget from "./SideDishes/SideDishesWidget";
 import MealsThisMonth from "./MealsThisMonth/MealsThisMonth";
 import RecipeCatalogWidget from "./RecipeCatalogWidget/RecipeCatalogWidget";
 import WeeklyScheduleWidget from "./WeeklyScheduleWidget/WeeklyScheduleWidget";
+import MenuCountdown from "./MenuCountdown/MenuCountdown";
 
 export {
   TotalRecipeWidget,
@@ -12,4 +13,5 @@ export {
   MealsThisMonth,
   RecipeCatalogWidget,
   WeeklyScheduleWidget,
+  MenuCountdown,
 };
