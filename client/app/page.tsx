@@ -28,7 +28,7 @@ export default async function Dashboard() {
   );
 
   return (
-    <div className="min-h-screen bg-zinc-100 font-sans">
+    <div className="min-h-screen bg-zinc-100 dark:bg-gray-950 font-sans">
       <main className="w-full max-w-[2000px] mx-auto min-h-screen p-4 sm:p-5 md:p-6 flex flex-col">
         <MenuCountdown />
         {/* Top widgets row */}

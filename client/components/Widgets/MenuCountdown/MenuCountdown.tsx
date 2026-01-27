@@ -36,21 +36,21 @@ export default function MenuCountdown() {
 
   const formatTimeUnit = (value: number, unit: string) => (
     <div className="flex flex-col items-center px-2">
-      <span className="text-2xl font-bold text-gray-900">
+      <span className="text-2xl font-bold text-gray-900 dark:text-white">
         {value.toString().padStart(2, "0")}
       </span>
-      <span className="text-xs text-gray-500">{unit}</span>
+      <span className="text-xs text-gray-500 dark:text-gray-400">{unit}</span>
     </div>
   );
 
   return (
-    <div className="bg-white rounded-xl p-4 shadow-sm col-span-full mb-4 sm:mb-5 md:mb-6">
+    <div className="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-sm col-span-full mb-4 sm:mb-5 md:mb-6">
       <div className="flex items-center justify-between">
         <div>
-          <h2 className="text-lg font-semibold text-gray-900">
+          <h2 className="text-lg font-semibold text-gray-900 dark:text-white">
             Next Menu Generation
           </h2>
-          <p className="text-sm text-gray-500">
+          <p className="text-sm text-gray-500 dark:text-gray-400">
             Time until next month's menu is automatically generated
           </p>
         </div>

@@ -17,7 +17,7 @@ export default function CurrentMealWidget({
   const meal = getCurrentMeal(monthMenu);
 
   return (
-    <div className="w-full rounded-2xl bg-white shadow-sm overflow-hidden">
+    <div className="w-full rounded-2xl bg-white dark:bg-gray-800 shadow-sm overflow-hidden">
       {/* Header */}
       <div className="bg-linear-to-r from-teal-600 to-teal-500 p-4 text-white">
         <div className="flex items-center space-x-3">
@@ -37,9 +37,11 @@ export default function CurrentMealWidget({
       <div className="p-4">
         <div className="flex items-center justify-between mb-4">
           <div className="flex items-center space-x-2">
-            <span className="text-sm text-gray-500">Today's Dinner</span>
-            <ArrowRight className="w-4 h-4 text-gray-400" />
-            <span className="text-sm font-medium text-gray-700">
+            <span className="text-sm text-gray-500 dark:text-gray-400">
+              Today's Dinner
+            </span>
+            <ArrowRight className="w-4 h-4 text-gray-400 dark:text-gray-500" />
+            <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
               {currentDay}
             </span>
           </div>
@@ -47,13 +49,17 @@ export default function CurrentMealWidget({
 
         {/* Meal Card */}
         {meal ? (
-          <div className="bg-gray-50 rounded-xl p-4 mb-4 border border-gray-100">
-            <h3 className="font-semibold text-gray-900">{meal.name}</h3>
-            <p className="text-sm text-gray-500">{meal.sides.join(", ")}</p>
+          <div className="bg-gray-50 dark:bg-gray-700 rounded-xl p-4 mb-4 border border-gray-100 dark:border-gray-600">
+            <h3 className="font-semibold text-gray-900 dark:text-white">
+              {meal.name}
+            </h3>
+            <p className="text-sm text-gray-500 dark:text-gray-400">
+              {meal.sides.join(", ")}
+            </p>
           </div>
         ) : (
-          <div className="bg-gray-50 rounded-xl p-4 mb-4 border border-gray-100">
-            <h3 className="font-semibold text-gray-900">
+          <div className="bg-gray-50 dark:bg-gray-700 rounded-xl p-4 mb-4 border border-gray-100 dark:border-gray-600">
+            <h3 className="font-semibold text-gray-900 dark:text-white">
               No meal planned for today
             </h3>
           </div>
@@ -67,7 +73,7 @@ export default function CurrentMealWidget({
               className={`px-4 py-2.5 text-sm rounded-lg transition-all ${
                 week === currentWeek
                   ? "text-white font-medium shadow-md"
-                  : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                  : "bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600"
               }`}
               style={{
                 background:

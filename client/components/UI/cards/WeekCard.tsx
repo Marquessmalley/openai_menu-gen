@@ -15,26 +15,47 @@ export function WeekCard({
 }: WeekCardProps) {
   // Day color mapping with vibrant colors for each day of the week
   const dayColors: Record<string, { bg: string; text: string }> = {
-    Monday: { bg: "bg-blue-100", text: "text-blue-800" },
-    Tuesday: { bg: "bg-purple-100", text: "text-purple-800" },
-    Wednesday: { bg: "bg-green-100", text: "text-green-800" },
-    Thursday: { bg: "bg-yellow-100", text: "text-yellow-800" },
-    Friday: { bg: "bg-red-100", text: "text-red-800" },
-    Saturday: { bg: "bg-pink-100", text: "text-pink-800" },
-    Sunday: { bg: "bg-indigo-100", text: "text-indigo-800" },
+    Monday: {
+      bg: "bg-blue-100 dark:bg-blue-900/30",
+      text: "text-blue-800 dark:text-blue-200",
+    },
+    Tuesday: {
+      bg: "bg-purple-100 dark:bg-purple-900/30",
+      text: "text-purple-800 dark:text-purple-200",
+    },
+    Wednesday: {
+      bg: "bg-green-100 dark:bg-green-900/30",
+      text: "text-green-800 dark:text-green-200",
+    },
+    Thursday: {
+      bg: "bg-yellow-100 dark:bg-yellow-900/30",
+      text: "text-yellow-800 dark:text-yellow-200",
+    },
+    Friday: {
+      bg: "bg-red-100 dark:bg-red-900/30",
+      text: "text-red-800 dark:text-red-200",
+    },
+    Saturday: {
+      bg: "bg-pink-100 dark:bg-pink-900/30",
+      text: "text-pink-800 dark:text-pink-200",
+    },
+    Sunday: {
+      bg: "bg-indigo-100 dark:bg-indigo-900/30",
+      text: "text-indigo-800 dark:text-indigo-200",
+    },
   };
 
   // Get the first three letters of the day for the chip
   const getDayAbbreviation = (day: string) => day.substring(0, 3);
 
   return (
-    <div className="h-full flex flex-col bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-md transition-shadow">
-      <div className="p-4 border-b border-gray-100 flex justify-between items-center">
-        <h3 className="text-base font-medium text-gray-900">
+    <div className="h-full flex flex-col bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 overflow-hidden hover:shadow-md transition-shadow">
+      <div className="p-4 border-b border-gray-100 dark:border-gray-700 flex justify-between items-center">
+        <h3 className="text-base font-medium text-gray-900 dark:text-white">
           Week {weekNumber}
         </h3>
         {isCurrent && (
-          <Chip className="bg-teal-100 text-teal-800 text-xs font-medium">
+          <Chip className="bg-teal-100 dark:bg-teal-900/30 text-teal-800 dark:text-teal-200 text-xs font-medium">
             Current
           </Chip>
         )}
@@ -47,8 +68,8 @@ export function WeekCard({
         <div className="space-y-3">
           {days.map((day, index) => {
             const colors = dayColors[day.day] || {
-              bg: "bg-gray-100",
-              text: "text-gray-800",
+              bg: "bg-gray-100 dark:bg-gray-700",
+              text: "text-gray-800 dark:text-gray-200",
             };
             return (
               <div key={index} className="flex items-start space-x-3">
@@ -58,13 +79,16 @@ export function WeekCard({
                   {getDayAbbreviation(day.day)}
                 </Chip>
                 <div className="flex-1 min-w-0">
-                  <div className="text-sm font-medium text-gray-900">
+                  <div className="text-sm font-medium text-gray-900 dark:text-white">
                     {day.meal.name}
                   </div>
                   {day.meal.sides && day.meal.sides.length > 0 && (
                     <div className="mt-1">
                       {day.meal.sides.map((side: string, i: number) => (
-                        <span key={i} className="text-xs text-gray-500">
+                        <span
+                          key={i}
+                          className="text-xs text-gray-500 dark:text-gray-400"
+                        >
                           {side}
                           {i < day.meal.sides!.length - 1 ? " • " : ""}
                         </span>

@@ -1,8 +1,9 @@
-import { Calendar, ChefHat, Moon } from "lucide-react";
+import { Calendar, ChefHat } from "lucide-react";
+import { ThemeToggle } from "@/components/UI/theme-toggle";
 
 const NavBar = () => {
   return (
-    <nav className="w-full bg-white shadow-sm py-4 px-4 sm:px-6 lg:px-8">
+    <nav className="w-full bg-white dark:bg-gray-900 shadow-sm py-4 px-4 sm:px-6 lg:px-8">
       <div className="flex items-center justify-between">
         {/* Left side: Logo and Brand */}
         <div className="flex items-center space-x-4">
@@ -26,8 +27,10 @@ const NavBar = () => {
             </svg>
           </div>
           <div className="flex flex-col">
-            <h1 className="text-xl font-bold text-gray-900">Kisha's Kitchen</h1>
-            <p className="text-sm text-gray-500">
+            <h1 className="text-xl font-bold text-gray-900 dark:text-white">
+              Kisha's Kitchen
+            </h1>
+            <p className="text-sm text-gray-500 dark:text-gray-400">
               AI-powered monthly meal generator
             </p>
           </div>
@@ -35,17 +38,15 @@ const NavBar = () => {
 
         {/* Right side: Navigation items */}
         <div className="flex items-center space-x-6">
-          <div className="hidden sm:flex items-center text-gray-600 hover:text-gray-900 transition-colors">
+          <div className="hidden sm:flex items-center text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors">
             <Calendar className="w-4 h-4 mr-2" />
             <span className="text-sm">Monthly Plan</span>
           </div>
-          <div className="hidden sm:flex items-center text-gray-600 hover:text-gray-900 transition-colors">
+          <div className="hidden sm:flex items-center text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors">
             <ChefHat className="w-4 h-4 mr-2" />
             <span className="text-sm">33 Recipes</span>
           </div>
-          <button className="p-2 rounded-full hover:bg-gray-100 transition-colors">
-            <Moon className="w-4 h-4 text-gray-600" />
-          </button>
+          <ThemeToggle />
         </div>
       </div>
     </nav>

@@ -10,10 +10,10 @@ export default function WeeklyScheduleWidget({
 }) {
   const { week: currentWeek } = getCurrentDateInfo();
   return (
-    <div className="bg-white rounded-2xl shadow-sm overflow-hidden flex flex-col h-full">
+    <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm overflow-hidden flex flex-col h-full">
       <div className="p-6 pb-4">
         <div className="flex items-center justify-between">
-          <h2 className="text-xl font-semibold text-gray-900">
+          <h2 className="text-xl font-semibold text-gray-900 dark:text-white">
             Weekly Schedules
           </h2>
         </div>

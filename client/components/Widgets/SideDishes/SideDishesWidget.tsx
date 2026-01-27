@@ -7,7 +7,7 @@ export default function SideDishesWidget({ stat }: SideDishesWidgetProps) {
         title="Side Dishes"
         stat={stat}
         subtitle="32 unique options"
-        bgColor="bg-orange-100"
+        bgColor="bg-orange-100 dark:bg-orange-900/20"
         iconBgColor="bg-[#f59f0a]"
         icon={
           <svg
