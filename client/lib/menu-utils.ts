@@ -15,7 +15,10 @@ export function countSideDishes(menuItems: MenuItem[]): number {
 export function getCurrentMeal(menu: CurrentMonthMenu): MenuItem | undefined {
   // Get today's date information
   const today = new Date();
-  const currentDay = today.toLocaleDateString("en-US", { weekday: "long" });
+  const currentDay = today.toLocaleDateString("en-US", {
+    weekday: "long",
+    timeZone: "America/New_York",
+  });
   const currentWeek = Math.ceil(today.getDate() / 7);
 
   // Find the current week in the schedule
