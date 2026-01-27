@@ -48,10 +48,8 @@ export default function CurrentMealWidget({
         {/* Meal Card */}
         {meal ? (
           <div className="bg-gray-50 rounded-xl p-4 mb-4 border border-gray-100">
-            <h3 className="font-semibold text-gray-900">Baked Chicken</h3>
-            <p className="text-sm text-gray-500">
-              with cabbage & macaroni and cheese
-            </p>
+            <h3 className="font-semibold text-gray-900">{meal.name}</h3>
+            <p className="text-sm text-gray-500">{meal.sides.join(", ")}</p>
           </div>
         ) : (
           <div className="bg-gray-50 rounded-xl p-4 mb-4 border border-gray-100">
