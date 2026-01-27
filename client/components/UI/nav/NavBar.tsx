@@ -26,8 +26,10 @@ const NavBar = () => {
             </svg>
           </div>
           <div className="flex flex-col">
-            <h1 className="text-xl font-bold text-gray-900">Menu Planner</h1>
-            <p className="text-sm text-gray-500">AI-powered meal scheduling</p>
+            <h1 className="text-xl font-bold text-gray-900">Kisha's Kitchen</h1>
+            <p className="text-sm text-gray-500">
+              AI-powered monthly meal generator
+            </p>
           </div>
         </div>
 
