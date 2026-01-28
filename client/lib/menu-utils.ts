@@ -13,13 +13,27 @@ export function countSideDishes(menuItems: MenuItem[]): number {
 }
 
 export function getCurrentMeal(menu: CurrentMonthMenu): MenuItem | undefined {
-  // Get today's date information
+  // Get today's date information in America/New_York timezone
   const today = new Date();
+  const timeZone = "America/New_York";
+
+  // Get the weekday in New York timezone
   const currentDay = today.toLocaleDateString("en-US", {
     weekday: "long",
-    timeZone: "America/New_York",
+    timeZone,
   });
-  const currentWeek = Math.ceil(today.getDate() / 7);
+
+  // Get the day of month in New York timezone
+  const dayOfMonth = parseInt(
+    today.toLocaleDateString("en-US", {
+      day: "numeric",
+      timeZone,
+    }),
+    10
+  );
+
+  // Calculate the week number based on day of month in New York timezone
+  const currentWeek = Math.ceil(dayOfMonth / 7);
 
   // Find the current week in the schedule
   const currentWeekSchedule = menu.schedule.find(
