@@ -11,7 +11,7 @@ export function getCurrentDateInfo(): CurrentDateInfo {
 
   return {
     date: currentDate,
-    day: currentDate.toLocaleDateString("en-US", { weekday: "long" }),
+    day: currentDate.toLocaleDateString("en-US", { weekday: "long", timeZone: "America/New_York" }),
     month: currentDate.toLocaleDateString("en-US", { month: "long" }),
     year: currentDate.getFullYear(),
     week: Math.ceil(currentDate.getDate() / 7),
