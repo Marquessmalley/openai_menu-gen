@@ -1,6 +1,6 @@
 import { Calendar, ArrowRight } from "lucide-react";
 import { getCurrentDateInfo } from "@/lib/date-utils";
-import { getCurrentMeal } from "@/lib/menu-utils";
+import { getCurrentMeal, getWeeksInSchedule } from "@/lib/menu-utils";
 import { CurrentMonthMenu } from "@/types";
 
 export default function CurrentMealWidget({
@@ -10,11 +10,14 @@ export default function CurrentMealWidget({
 }) {
   const {
     day: currentDay,
+    date: currentDate,
     month: currentMonth,
     year: currentYear,
     week: currentWeek,
   } = getCurrentDateInfo();
   const meal = getCurrentMeal(monthMenu);
+  const weeks = getWeeksInSchedule(monthMenu);
+  const weekButtons = weeks.length > 0 ? weeks : [1, 2, 3, 4, 5, 6];
 
   return (
     <div className="w-full rounded-2xl bg-white dark:bg-gray-800 shadow-sm overflow-hidden">
@@ -26,7 +29,7 @@ export default function CurrentMealWidget({
           </div>
           <div>
             <h2 className="text-2xl font-bold">
-              {currentMonth} {currentYear}
+              {currentMonth} {currentDate}, {currentYear}
             </h2>
             <p className="text-sm text-teal-100">Current meal schedule</p>
           </div>
@@ -67,7 +70,7 @@ export default function CurrentMealWidget({
 
         {/* Week Navigation */}
         <div className="flex justify-between mt-6">
-          {[1, 2, 3, 4].map((week) => (
+          {weekButtons.map((week) => (
             <button
               key={week}
               className={`px-4 py-2.5 text-sm rounded-lg transition-all ${

@@ -2,6 +2,7 @@
 import { WeekCard } from "@/components/UI/cards/WeekCard";
 import { CurrentMonthMenu } from "@/types";
 import { getCurrentDateInfo } from "@/lib/date-utils";
+import { groupScheduleByWeek } from "@/lib/menu-utils";
 
 export default function WeeklyScheduleWidget({
   monthMenu,
@@ -9,6 +10,8 @@ export default function WeeklyScheduleWidget({
   monthMenu: CurrentMonthMenu;
 }) {
   const { week: currentWeek } = getCurrentDateInfo();
+  const weeks = groupScheduleByWeek(monthMenu);
+
   return (
     <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm overflow-hidden flex flex-col h-full">
       <div className="p-6 pb-4">
@@ -21,10 +24,12 @@ export default function WeeklyScheduleWidget({
 
       <div className="flex-1 px-6 pb-6 overflow-y-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 h-auto">
-          {monthMenu.schedule.map((week) => (
+          {weeks.map((week) => (
             <div key={week.week} className="min-h-0">
               <WeekCard
                 weekNumber={week.week}
+                month={monthMenu.month}
+                year={monthMenu.year}
                 isCurrent={week.week === currentWeek}
                 days={week.days}
               />

@@ -3,20 +3,16 @@ interface Menu {
   sides: string[];
 }
 
-interface DaySchedule {
-  day: string;
+interface ScheduleEntry {
+  date: number;
+  dayOfWeek: string;
   meal: Menu;
-}
-
-interface WeekSchedule {
-  week: number;
-  days: DaySchedule[];
 }
 
 interface MonthMenu {
   month: string;
   year: string;
-  schedule: WeekSchedule[];
+  schedule: ScheduleEntry[];
 }
 
 interface MenuScheduleResponse {

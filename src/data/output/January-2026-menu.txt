@@ -1,27 +1,22 @@
-WEEK 1
-Monday: Chili - Sides: crackers, cornbread
-Tuesday: Meatloaf - Sides: mashed potatoes, corn
-Wednesday: Garlic Parmesan Penne with Steak and Broccoli - Sides: garlic bread
-Thursday: Chicken Fajitas - Sides: rice, beans
-Friday: Fajitas - Sides: rice, beans
-
-WEEK 2
-Monday: White Chicken Chili - Sides: tortilla chips, sour cream
-Tuesday: Steak Tacos - Sides: spanish rice
-Wednesday: Chicken Alfredo - Sides: salad
-Thursday: Pork Chops - Sides: mashed potatoes, green beans
-Friday: Loaded Baked Potatoes - Sides: chicken, broccoli, cheese
-
-WEEK 3
-Monday: Steak Bites - Sides: sweet potatoes, broccoli
-Tuesday: Baked BBQ Chicken - Sides: baked beans, macaroni and cheese
-Wednesday: Red Beans and Rice with Sausage - Sides: chicken wings, cornbread
-Thursday: Chicken Legs - Sides: brussel sprouts, dirty rice
-Friday: Goulash - Sides: garlic bread
-
-WEEK 4
-Monday: Chicken and Noodles - Sides: cornbread
-Tuesday: Beef and Broccoli - Sides: rice
-Wednesday: Hamburger - Sides: fries
-Thursday: Philly Cheesesteak - Sides: fries
-Friday: Baked Chicken - Sides: cabbage, macaroni and cheese
+January 1 (Thursday): Chili - Sides: crackers, cornbread
+January 2 (Friday): Meatloaf - Sides: mashed potatoes, corn
+January 5 (Monday): Chicken Alfredo - Sides: salad
+January 6 (Tuesday): Steak Tacos - Sides: spanish rice
+January 7 (Wednesday): Loaded Baked Potatoes - Sides: chicken, broccoli, cheese
+January 8 (Thursday): Red Beans and Rice with Sausage - Sides: chicken wings, cornbread
+January 9 (Friday): Chicken Legs - Sides: brussel sprouts, dirty rice
+January 12 (Monday): Fajitas - Sides: rice, beans
+January 13 (Tuesday): White Chicken Chili - Sides: tortilla chips, sour cream
+January 14 (Wednesday): Garlic Parmesan Penne with Steak and Broccoli - Sides: garlic bread
+January 15 (Thursday): Chicken and Noodles - Sides: cornbread
+January 16 (Friday): Chicken Fajitas - Sides: rice, beans
+January 19 (Monday): Steak Bites - Sides: sweet potatoes, broccoli
+January 20 (Tuesday): Baked Chicken - Sides: cabbage, macaroni and cheese
+January 21 (Wednesday): Beef and Broccoli - Sides: rice
+January 22 (Thursday): Chicken Tacos - Sides: salsa, guacamole
+January 23 (Friday): Chili - Sides: crackers, cornbread
+January 26 (Monday): Pork Chops - Sides: mashed potatoes, green beans
+January 27 (Tuesday): Philly Cheesesteak - Sides: fries
+January 28 (Wednesday): Baked BBQ Chicken - Sides: baked beans, macaroni and cheese
+January 29 (Thursday): Goulash - Sides: garlic bread
+January 30 (Friday): Hamburgers - Sides: fries

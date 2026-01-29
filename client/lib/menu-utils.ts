@@ -1,9 +1,12 @@
-import { CurrentMonthMenu, MenuItem } from "@/types";
+import {
+  CurrentMonthMenu,
+  MenuItem,
+  WeekSchedule,
+  DayMenu,
+} from "@/types";
 
 export function countMealsInMonth(menu: CurrentMonthMenu): number {
-  return menu.schedule.reduce((total, week) => {
-    return total + week.days.length;
-  }, 0);
+  return menu.schedule.length;
 }
 
 export function countSideDishes(menuItems: MenuItem[]): number {
@@ -13,17 +16,9 @@ export function countSideDishes(menuItems: MenuItem[]): number {
 }
 
 export function getCurrentMeal(menu: CurrentMonthMenu): MenuItem | undefined {
-  // Get today's date information in America/New_York timezone
   const today = new Date();
   const timeZone = "America/New_York";
 
-  // Get the weekday in New York timezone
-  const currentDay = today.toLocaleDateString("en-US", {
-    weekday: "long",
-    timeZone,
-  });
-
-  // Get the day of month in New York timezone
   const dayOfMonth = parseInt(
     today.toLocaleDateString("en-US", {
       day: "numeric",
@@ -32,19 +27,47 @@ export function getCurrentMeal(menu: CurrentMonthMenu): MenuItem | undefined {
     10
   );
 
-  // Calculate the week number based on day of month in New York timezone
-  const currentWeek = Math.ceil(dayOfMonth / 7);
+  const currentDay = today.toLocaleDateString("en-US", {
+    weekday: "long",
+    timeZone,
+  });
 
-  // Find the current week in the schedule
-  const currentWeekSchedule = menu.schedule.find(
-    (week) => week.week === currentWeek,
-  );
-  if (!currentWeekSchedule) return undefined;
+  // Weekend: no meal planned
+  if (currentDay === "Saturday" || currentDay === "Sunday") {
+    return undefined;
+  }
 
-  // Find today's meal in the week's days
-  const todayMeal = currentWeekSchedule.days.find(
-    (day) => day.day.toLowerCase() === currentDay.toLowerCase(),
-  );
+  const entry = menu.schedule.find((e) => e.date === dayOfMonth);
+  return entry?.meal;
+}
 
-  return todayMeal?.meal;
+/**
+ * Group date-based schedule into weeks for display (Week 1 = dates 1-7, etc.).
+ */
+export function groupScheduleByWeek(
+  menu: CurrentMonthMenu
+): WeekSchedule[] {
+  const byWeek = new Map<number, DayMenu[]>();
+
+  for (const entry of menu.schedule) {
+    const week = Math.ceil(entry.date / 7);
+    const dayMenu: DayMenu = { day: entry.dayOfWeek, meal: entry.meal };
+    if (!byWeek.has(week)) {
+      byWeek.set(week, []);
+    }
+    byWeek.get(week)!.push(dayMenu);
+  }
+
+  return Array.from(byWeek.entries())
+    .sort((a, b) => a[0] - b[0])
+    .map(([week, days]) => ({
+      week,
+      days,
+    }));
+}
+
+/** Unique week numbers present in the schedule (for week navigation). */
+export function getWeeksInSchedule(menu: CurrentMonthMenu): number[] {
+  const weeks = new Set(menu.schedule.map((e) => Math.ceil(e.date / 7)));
+  return Array.from(weeks).sort((a, b) => a - b);
 }

@@ -10,19 +10,29 @@ export interface DayMenu {
   meal: MenuItem;
 }
 
-export interface WeekSchedule {
-  week: number;
-  days: DayMenu[];
+/** One meal per calendar date (weekdays only). Used in API/JSON. */
+export interface ScheduleEntry {
+  date: number;
+  dayOfWeek: string;
+  meal: MenuItem;
 }
 
 export interface CurrentMonthMenu {
   month: string;
   year: string;
-  schedule: WeekSchedule[];
+  schedule: ScheduleEntry[];
+}
+
+/** Week grouping for display (derived from schedule). */
+export interface WeekSchedule {
+  week: number;
+  days: DayMenu[];
 }
 
 export interface WeekCardProps {
   weekNumber: number;
+  month: string;
+  year: string;
   isCurrent?: boolean;
   days: DayMenu[];
 }
