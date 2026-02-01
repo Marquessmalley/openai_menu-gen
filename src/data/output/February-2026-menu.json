@@ -1,0 +1,228 @@
+{
+  "month": "February",
+  "year": "2026",
+  "schedule": [
+    {
+      "date": 2,
+      "dayOfWeek": "Friday",
+      "meal": {
+        "id": 9,
+        "name": "Meatloaf",
+        "sides": [
+          "mashed potatoes",
+          "corn"
+        ]
+      }
+    },
+    {
+      "date": 5,
+      "dayOfWeek": "Monday",
+      "meal": {
+        "id": 3,
+        "name": "Loaded Baked Potatoes",
+        "sides": [
+          "chicken",
+          "broccoli",
+          "cheese"
+        ]
+      }
+    },
+    {
+      "date": 6,
+      "dayOfWeek": "Tuesday",
+      "meal": {
+        "id": 29,
+        "name": "Chicken Alfredo",
+        "sides": [
+          "salad"
+        ]
+      }
+    },
+    {
+      "date": 7,
+      "dayOfWeek": "Wednesday",
+      "meal": {
+        "id": 1,
+        "name": "Chili",
+        "sides": [
+          "crackers",
+          "cornbread"
+        ]
+      }
+    },
+    {
+      "date": 8,
+      "dayOfWeek": "Thursday",
+      "meal": {
+        "id": 8,
+        "name": "Fajitas",
+        "sides": [
+          "rice",
+          "beans"
+        ]
+      }
+    },
+    {
+      "date": 9,
+      "dayOfWeek": "Friday",
+      "meal": {
+        "id": 5,
+        "name": "White Chicken Chili",
+        "sides": [
+          "tortilla chips",
+          "sour cream"
+        ]
+      }
+    },
+    {
+      "date": 12,
+      "dayOfWeek": "Monday",
+      "meal": {
+        "id": 2,
+        "name": "Steak Bites",
+        "sides": [
+          "sweet potatoes",
+          "broccoli"
+        ]
+      }
+    },
+    {
+      "date": 13,
+      "dayOfWeek": "Tuesday",
+      "meal": {
+        "id": 12,
+        "name": "Pepper Steak with Gravy",
+        "sides": [
+          "rice",
+          "broccoli",
+          "biscuits"
+        ]
+      }
+    },
+    {
+      "date": 14,
+      "dayOfWeek": "Wednesday",
+      "meal": {
+        "id": 10,
+        "name": "Baked Chicken",
+        "sides": [
+          "cabbage",
+          "macaroni and cheese"
+        ]
+      }
+    },
+    {
+      "date": 15,
+      "dayOfWeek": "Thursday",
+      "meal": {
+        "id": 7,
+        "name": "Chicken Tacos",
+        "sides": [
+          "spanish rice"
+        ]
+      }
+    },
+    {
+      "date": 16,
+      "dayOfWeek": "Friday",
+      "meal": {
+        "id": 4,
+        "name": "Red Beans and Rice with Sausage",
+        "sides": [
+          "chicken wings",
+          "cornbread"
+        ]
+      }
+    },
+    {
+      "date": 19,
+      "dayOfWeek": "Monday",
+      "meal": {
+        "id": 33,
+        "name": "Goulash",
+        "sides": [
+          "garlic bread"
+        ]
+      }
+    },
+    {
+      "date": 20,
+      "dayOfWeek": "Tuesday",
+      "meal": {
+        "id": 14,
+        "name": "Chicken Strips",
+        "sides": [
+          "sweet potato fries"
+        ]
+      }
+    },
+    {
+      "date": 21,
+      "dayOfWeek": "Wednesday",
+      "meal": {
+        "id": 6,
+        "name": "Steak Tacos",
+        "sides": [
+          "spanish rice"
+        ]
+      }
+    },
+    {
+      "date": 22,
+      "dayOfWeek": "Thursday",
+      "meal": {
+        "id": 11,
+        "name": "Chicken and Noodles",
+        "sides": [
+          "cornbread"
+        ]
+      }
+    },
+    {
+      "date": 23,
+      "dayOfWeek": "Friday",
+      "meal": {
+        "id": 17,
+        "name": "Beef and Broccoli",
+        "sides": [
+          "rice"
+        ]
+      }
+    },
+    {
+      "date": 26,
+      "dayOfWeek": "Monday",
+      "meal": {
+        "id": 19,
+        "name": "Chicken Legs",
+        "sides": [
+          "brussel sprouts",
+          "dirty rice"
+        ]
+      }
+    },
+    {
+      "date": 27,
+      "dayOfWeek": "Tuesday",
+      "meal": {
+        "id": 31,
+        "name": "Baked BBQ Chicken",
+        "sides": [
+          "baked beans",
+          "macaroni and cheese"
+        ]
+      }
+    },
+    {
+      "date": 28,
+      "dayOfWeek": "Wednesday",
+      "meal": {
+        "id": 27,
+        "name": "Lasagna",
+        "sides": [
+          "salad"
+        ]
+      }
+    }
+  ]
+}
