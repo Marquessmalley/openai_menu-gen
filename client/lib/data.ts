@@ -1,4 +1,5 @@
 import { CurrentMonthMenu, ScheduleEntry } from "@/types";
+import { getCurrentDateInfo } from "@/lib/date-utils";
 
 // Build-safe fallbacks
 const emptyMenuList: any[] = [];
@@ -95,8 +96,9 @@ export async function fetchMonthMenu() {
   if (typeof window === "undefined" && !process.env.NEXT_PUBLIC_API_URL) {
     return emptyMonthMenu;
   }
+  const { month, year } = getCurrentDateInfo();
   const resp = await fetch(
-    `${process.env.NEXT_PUBLIC_API_URL}/menu/January/2026`,
+    `${process.env.NEXT_PUBLIC_API_URL}/menu/${month}/${year}`,
   );
 
   if (!resp.ok) {
