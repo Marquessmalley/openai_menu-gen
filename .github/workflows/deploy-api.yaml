@@ -1,12 +1,17 @@
-name: Deploy API to Render 
+name: Deploy API to Render On Success of Monthly Menu Schedule Automation
 
-on: 
+on:
   workflow_run:
     workflows: ["Execute Monthly Menu Schedule"]
     types: [completed]
 
   workflow_dispatch:
 
+  push:
+    branches: [main]
+    paths:
+      - "api/src/data/**"
+      - "src/data/**"
 
 permissions:
   contents: write
@@ -14,7 +19,7 @@ permissions:
 jobs:
   deploy-api:
     runs-on: ubuntu-latest
-    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event_name == 'push' || (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success') }}
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -42,4 +47,3 @@ jobs:
 
       - name: Trigger Render Deploy
         run: curl -X POST "${{ secrets.RENDER_DEPLOY_HOOK }}"
-

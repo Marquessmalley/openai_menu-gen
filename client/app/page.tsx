@@ -16,7 +16,7 @@ import {
 
 import { countSideDishes } from "@/lib/menu-utils";
 
-export const dynamic = "force-dynamic";
+// export const dynamic = "force-dynamic";
 export const revalidate = 86400; // Revalidate every day (24 hours in seconds)
 
 export default async function Dashboard() {

@@ -1,4 +1,4 @@
-import { CurrentMonthMenu, ScheduleEntry } from "@/types";
+import { CurrentMonthMenu, MenuItem, ScheduleEntry } from "@/types";
 import { getCurrentDateInfo } from "@/lib/date-utils";
 
 // Build-safe fallbacks
@@ -131,4 +131,30 @@ export async function fetchMonthsMenu() {
   }
 
   return resp.json();
+}
+
+export async function createMenuItem(input: {
+  name: string;
+  sides: string[];
+}): Promise<MenuItem> {
+  const base = process.env.NEXT_PUBLIC_API_URL;
+  if (!base) {
+    throw new Error("NEXT_PUBLIC_API_URL is not configured");
+  }
+  const resp = await fetch(`${base}/menu`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ name: input.name, sides: input.sides }),
+  });
+  if (!resp.ok) {
+    let message = "Failed to create menu item";
+    try {
+      const errBody = (await resp.json()) as { error?: string };
+      if (typeof errBody.error === "string") message = errBody.error;
+    } catch {
+      // ignore parse errors
+    }
+    throw new Error(message);
+  }
+  return resp.json() as Promise<MenuItem>;
 }

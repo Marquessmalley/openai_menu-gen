@@ -1,6 +1,7 @@
 // components/Widgets/RecipeCatalogWidget/RecipeCatalogWidget.tsx
 import { BookOpen } from "lucide-react";
 import { Chip } from "@/components/UI/Chip";
+import { AddRecipeDialog } from "@/components/Widgets/RecipeCatalogWidget/AddRecipeDialog";
 import { RecipeCatalogWidgetProps } from "@/types";
 
 export default function RecipeCatalogWidget({
@@ -19,9 +20,12 @@ export default function RecipeCatalogWidget({
               Recipe Catalog
             </h2>
           </div>
-          <Chip className="bg-teal-100 dark:bg-teal-900 text-teal-800 dark:text-teal-200">
-            {menuItems.length} recipes
-          </Chip>
+          <div className="flex items-center gap-2">
+            <AddRecipeDialog />
+            <Chip className="bg-teal-100 dark:bg-teal-900 text-teal-800 dark:text-teal-200">
+              {menuItems.length} recipes
+            </Chip>
+          </div>
         </div>
       </div>
 

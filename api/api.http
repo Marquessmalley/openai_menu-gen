@@ -1,3 +1,12 @@
+### Create menu item
+POST http://localhost:3000/api/menu
+Content-Type: application/json
+
+{
+  "name": "Test",
+  "sides": ["pasta", "garlic bread"]
+}
+
 ### Get menu list
 http://localhost:3000/api/menu
 

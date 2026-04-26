@@ -1,5 +1,10 @@
 import { Request, Response } from "express";
-import { ReadMenuFile, ReadMonthMenu, ReadMonthsMenu } from "../utils/menu-helper.js";
+import {
+  ReadMenuFile,
+  ReadMonthMenu,
+  ReadMonthsMenu,
+  AddMenuItem,
+} from "../utils/menu-helper.js";
 
 export const GetMenuList = async (req: Request, res: Response) => {
   try {
@@ -51,3 +56,41 @@ export const GetMonthsMenu = async (req: Request, res: Response) => {
     res.status(500).json({ error: "Failed to get month menu" });
   }
 }
+
+export const CreateMenuItem = async (req: Request, res: Response) => {
+  try {
+    const body = req.body as unknown;
+    if (!body || typeof body !== "object") {
+      res.status(400).json({ error: "Invalid body" });
+      return;
+    }
+    const { name, sides } = body as Record<string, unknown>;
+
+    if (typeof name !== "string" || name.trim() === "") {
+      res.status(400).json({ error: "name is required" });
+      return;
+    }
+    if (!Array.isArray(sides)) {
+      res.status(400).json({ error: "sides must be an array" });
+      return;
+    }
+
+    const cleanedSides = sides
+      .filter((s): s is string => typeof s === "string")
+      .map((s) => s.trim())
+      .filter((s) => s.length > 0);
+
+    if (cleanedSides.length === 0) {
+      res
+        .status(400)
+        .json({ error: "At least one non-empty side is required" });
+      return;
+    }
+
+    const item = await AddMenuItem(name.trim(), cleanedSides);
+    res.status(201).json(item);
+  } catch (err) {
+    console.error("Failed to create menu item:", err);
+    res.status(500).json({ error: "Failed to create menu item" });
+  }
+};
