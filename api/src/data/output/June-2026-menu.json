@@ -1,0 +1,262 @@
+{
+  "month": "June",
+  "year": "2026",
+  "schedule": [
+    {
+      "date": 1,
+      "dayOfWeek": "Monday",
+      "meal": {
+        "id": 1,
+        "name": "Chili",
+        "sides": [
+          "crackers",
+          "cornbread"
+        ]
+      }
+    },
+    {
+      "date": 2,
+      "dayOfWeek": "Tuesday",
+      "meal": {
+        "id": 2,
+        "name": "Steak Bites",
+        "sides": [
+          "sweet potatoes",
+          "broccoli"
+        ]
+      }
+    },
+    {
+      "date": 3,
+      "dayOfWeek": "Wednesday",
+      "meal": {
+        "id": 3,
+        "name": "Loaded Baked Potatoes",
+        "sides": [
+          "chicken",
+          "broccoli",
+          "cheese"
+        ]
+      }
+    },
+    {
+      "date": 4,
+      "dayOfWeek": "Thursday",
+      "meal": {
+        "id": 5,
+        "name": "White Chicken Chili",
+        "sides": [
+          "tortilla chips",
+          "sour cream"
+        ]
+      }
+    },
+    {
+      "date": 5,
+      "dayOfWeek": "Friday",
+      "meal": {
+        "id": 8,
+        "name": "Fajitas",
+        "sides": [
+          "rice",
+          "beans"
+        ]
+      }
+    },
+    {
+      "date": 8,
+      "dayOfWeek": "Monday",
+      "meal": {
+        "id": 29,
+        "name": "Chicken Alfredo",
+        "sides": [
+          "salad"
+        ]
+      }
+    },
+    {
+      "date": 9,
+      "dayOfWeek": "Tuesday",
+      "meal": {
+        "id": 4,
+        "name": "Red Beans and Rice with Sausage",
+        "sides": [
+          "chicken wings",
+          "cornbread"
+        ]
+      }
+    },
+    {
+      "date": 10,
+      "dayOfWeek": "Wednesday",
+      "meal": {
+        "id": 7,
+        "name": "Chicken Tacos",
+        "sides": [
+          "spanish rice"
+        ]
+      }
+    },
+    {
+      "date": 11,
+      "dayOfWeek": "Thursday",
+      "meal": {
+        "id": 12,
+        "name": "Pepper Steak with Gravy",
+        "sides": [
+          "rice",
+          "broccoli",
+          "biscuits"
+        ]
+      }
+    },
+    {
+      "date": 12,
+      "dayOfWeek": "Friday",
+      "meal": {
+        "id": 33,
+        "name": "Goulash",
+        "sides": [
+          "garlic bread"
+        ]
+      }
+    },
+    {
+      "date": 15,
+      "dayOfWeek": "Monday",
+      "meal": {
+        "id": 18,
+        "name": "Bourbon Chicken",
+        "sides": [
+          "rice",
+          "green beans"
+        ]
+      }
+    },
+    {
+      "date": 16,
+      "dayOfWeek": "Tuesday",
+      "meal": {
+        "id": 11,
+        "name": "Chicken and Noodles",
+        "sides": [
+          "cornbread"
+        ]
+      }
+    },
+    {
+      "date": 17,
+      "dayOfWeek": "Wednesday",
+      "meal": {
+        "id": 6,
+        "name": "Steak Tacos",
+        "sides": [
+          "spanish rice"
+        ]
+      }
+    },
+    {
+      "date": 18,
+      "dayOfWeek": "Thursday",
+      "meal": {
+        "id": 31,
+        "name": "Baked BBQ Chicken",
+        "sides": [
+          "baked beans",
+          "macaroni and cheese"
+        ]
+      }
+    },
+    {
+      "date": 19,
+      "dayOfWeek": "Friday",
+      "meal": {
+        "id": 14,
+        "name": "Chicken Strips",
+        "sides": [
+          "sweet potato fries"
+        ]
+      }
+    },
+    {
+      "date": 22,
+      "dayOfWeek": "Monday",
+      "meal": {
+        "id": 25,
+        "name": "Hamburgers",
+        "sides": [
+          "fries"
+        ]
+      }
+    },
+    {
+      "date": 23,
+      "dayOfWeek": "Tuesday",
+      "meal": {
+        "id": 19,
+        "name": "Chicken Legs",
+        "sides": [
+          "brussel sprouts",
+          "dirty rice"
+        ]
+      }
+    },
+    {
+      "date": 24,
+      "dayOfWeek": "Wednesday",
+      "meal": {
+        "id": 22,
+        "name": "Steak Chicken Potato Skillet",
+        "sides": [
+          "vegetables"
+        ]
+      }
+    },
+    {
+      "date": 25,
+      "dayOfWeek": "Thursday",
+      "meal": {
+        "id": 24,
+        "name": "Philly Cheesesteak",
+        "sides": [
+          "fries"
+        ]
+      }
+    },
+    {
+      "date": 26,
+      "dayOfWeek": "Friday",
+      "meal": {
+        "id": 1,
+        "name": "Chili",
+        "sides": [
+          "crackers",
+          "cornbread"
+        ]
+      }
+    },
+    {
+      "date": 29,
+      "dayOfWeek": "Monday",
+      "meal": {
+        "id": 13,
+        "name": "Chicken Fajitas",
+        "sides": [
+          "rice",
+          "beans"
+        ]
+      }
+    },
+    {
+      "date": 30,
+      "dayOfWeek": "Tuesday",
+      "meal": {
+        "id": 27,
+        "name": "Lasagna",
+        "sides": [
+          "salad"
+        ]
+      }
+    }
+  ]
+}
