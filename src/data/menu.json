@@ -280,5 +280,13 @@
     "sides": [
       "Fries"
     ]
+  },
+  {
+    "id": 38,
+    "name": "Smokey Burgers",
+    "sides": [
+      "potato wedges",
+      "pickle spears"
+    ]
   }
 ]
