@@ -288,5 +288,12 @@
       "potato wedges",
       "pickle spears"
     ]
+  },
+  {
+    "id": 39,
+    "name": "Southwestern Bowl",
+    "sides": [
+      "Tortilla Chips"
+    ]
   }
 ]
