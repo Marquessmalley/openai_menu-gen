@@ -1,0 +1,251 @@
+{
+  "month": "August",
+  "year": "2026",
+  "schedule": [
+    {
+      "date": 3,
+      "dayOfWeek": "Monday",
+      "meal": {
+        "id": 1,
+        "name": "Chili",
+        "sides": [
+          "crackers",
+          "cornbread"
+        ]
+      }
+    },
+    {
+      "date": 4,
+      "dayOfWeek": "Tuesday",
+      "meal": {
+        "id": 2,
+        "name": "Steak Bites",
+        "sides": [
+          "sweet potatoes",
+          "broccoli"
+        ]
+      }
+    },
+    {
+      "date": 5,
+      "dayOfWeek": "Wednesday",
+      "meal": {
+        "id": 29,
+        "name": "Chicken Alfredo",
+        "sides": [
+          "salad"
+        ]
+      }
+    },
+    {
+      "date": 6,
+      "dayOfWeek": "Thursday",
+      "meal": {
+        "id": 8,
+        "name": "Fajitas",
+        "sides": [
+          "rice",
+          "beans"
+        ]
+      }
+    },
+    {
+      "date": 7,
+      "dayOfWeek": "Friday",
+      "meal": {
+        "id": 4,
+        "name": "Red Beans and Rice with Sausage",
+        "sides": [
+          "chicken wings",
+          "cornbread"
+        ]
+      }
+    },
+    {
+      "date": 10,
+      "dayOfWeek": "Monday",
+      "meal": {
+        "id": 10,
+        "name": "Baked Chicken",
+        "sides": [
+          "cabbage",
+          "macaroni and cheese"
+        ]
+      }
+    },
+    {
+      "date": 11,
+      "dayOfWeek": "Tuesday",
+      "meal": {
+        "id": 3,
+        "name": "Loaded Baked Potatoes",
+        "sides": [
+          "chicken",
+          "broccoli",
+          "cheese"
+        ]
+      }
+    },
+    {
+      "date": 12,
+      "dayOfWeek": "Wednesday",
+      "meal": {
+        "id": 7,
+        "name": "Chicken Tacos",
+        "sides": [
+          "spanish rice"
+        ]
+      }
+    },
+    {
+      "date": 13,
+      "dayOfWeek": "Thursday",
+      "meal": {
+        "id": 16,
+        "name": "Garlic Parmesan Penne with Steak and Broccoli",
+        "sides": [
+          "garlic bread"
+        ]
+      }
+    },
+    {
+      "date": 14,
+      "dayOfWeek": "Friday",
+      "meal": {
+        "id": 9,
+        "name": "Meatloaf",
+        "sides": [
+          "mashed potatoes",
+          "corn"
+        ]
+      }
+    },
+    {
+      "date": 17,
+      "dayOfWeek": "Monday",
+      "meal": {
+        "id": 13,
+        "name": "Chicken Fajitas",
+        "sides": [
+          "rice",
+          "beans"
+        ]
+      }
+    },
+    {
+      "date": 18,
+      "dayOfWeek": "Tuesday",
+      "meal": {
+        "id": 18,
+        "name": "Bourbon Chicken",
+        "sides": [
+          "rice",
+          "green beans"
+        ]
+      }
+    },
+    {
+      "date": 19,
+      "dayOfWeek": "Wednesday",
+      "meal": {
+        "id": 6,
+        "name": "Steak Tacos",
+        "sides": [
+          "spanish rice"
+        ]
+      }
+    },
+    {
+      "date": 20,
+      "dayOfWeek": "Thursday",
+      "meal": {
+        "id": 24,
+        "name": "Philly Cheesesteak",
+        "sides": [
+          "fries"
+        ]
+      }
+    },
+    {
+      "date": 21,
+      "dayOfWeek": "Friday",
+      "meal": {
+        "id": 19,
+        "name": "Chicken Legs",
+        "sides": [
+          "brussel sprouts",
+          "dirty rice"
+        ]
+      }
+    },
+    {
+      "date": 24,
+      "dayOfWeek": "Monday",
+      "meal": {
+        "id": 1,
+        "name": "Chili",
+        "sides": [
+          "crackers",
+          "cornbread"
+        ]
+      }
+    },
+    {
+      "date": 25,
+      "dayOfWeek": "Tuesday",
+      "meal": {
+        "id": 24,
+        "name": "Philly Cheesesteak",
+        "sides": [
+          "fries"
+        ]
+      }
+    },
+    {
+      "date": 26,
+      "dayOfWeek": "Wednesday",
+      "meal": {
+        "id": 33,
+        "name": "Goulash",
+        "sides": [
+          "garlic bread"
+        ]
+      }
+    },
+    {
+      "date": 27,
+      "dayOfWeek": "Thursday",
+      "meal": {
+        "id": 14,
+        "name": "Chicken Strips",
+        "sides": [
+          "sweet potato fries"
+        ]
+      }
+    },
+    {
+      "date": 28,
+      "dayOfWeek": "Friday",
+      "meal": {
+        "id": 31,
+        "name": "Baked BBQ Chicken",
+        "sides": [
+          "baked beans",
+          "macaroni and cheese"
+        ]
+      }
+    },
+    {
+      "date": 31,
+      "dayOfWeek": "Monday",
+      "meal": {
+        "id": 20,
+        "name": "Chicken Breast",
+        "sides": [
+          "succotash",
+          "rice"
+        ]
+      }
+    }
+  ]
+}
