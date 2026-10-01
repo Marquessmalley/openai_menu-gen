@@ -1,0 +1,260 @@
+{
+  "month": "October",
+  "year": "2026",
+  "schedule": [
+    {
+      "date": 1,
+      "dayOfWeek": "Thursday",
+      "meal": {
+        "id": 1,
+        "name": "Chili",
+        "sides": [
+          "crackers",
+          "cornbread"
+        ]
+      }
+    },
+    {
+      "date": 2,
+      "dayOfWeek": "Friday",
+      "meal": {
+        "id": 9,
+        "name": "Meatloaf",
+        "sides": [
+          "mashed potatoes",
+          "corn"
+        ]
+      }
+    },
+    {
+      "date": 5,
+      "dayOfWeek": "Monday",
+      "meal": {
+        "id": 6,
+        "name": "Steak Tacos",
+        "sides": [
+          "spanish rice"
+        ]
+      }
+    },
+    {
+      "date": 6,
+      "dayOfWeek": "Tuesday",
+      "meal": {
+        "id": 29,
+        "name": "Chicken Alfredo",
+        "sides": [
+          "salad"
+        ]
+      }
+    },
+    {
+      "date": 7,
+      "dayOfWeek": "Wednesday",
+      "meal": {
+        "id": 8,
+        "name": "Fajitas",
+        "sides": [
+          "rice",
+          "beans"
+        ]
+      }
+    },
+    {
+      "date": 8,
+      "dayOfWeek": "Thursday",
+      "meal": {
+        "id": 5,
+        "name": "White Chicken Chili",
+        "sides": [
+          "tortilla chips",
+          "sour cream"
+        ]
+      }
+    },
+    {
+      "date": 9,
+      "dayOfWeek": "Friday",
+      "meal": {
+        "id": 10,
+        "name": "Baked Chicken",
+        "sides": [
+          "cabbage",
+          "macaroni and cheese"
+        ]
+      }
+    },
+    {
+      "date": 12,
+      "dayOfWeek": "Monday",
+      "meal": {
+        "id": 2,
+        "name": "Steak Bites",
+        "sides": [
+          "sweet potatoes",
+          "broccoli"
+        ]
+      }
+    },
+    {
+      "date": 13,
+      "dayOfWeek": "Tuesday",
+      "meal": {
+        "id": 4,
+        "name": "Red Beans and Rice with Sausage",
+        "sides": [
+          "chicken wings",
+          "cornbread"
+        ]
+      }
+    },
+    {
+      "date": 14,
+      "dayOfWeek": "Wednesday",
+      "meal": {
+        "id": 14,
+        "name": "Chicken Strips",
+        "sides": [
+          "sweet potato fries"
+        ]
+      }
+    },
+    {
+      "date": 15,
+      "dayOfWeek": "Thursday",
+      "meal": {
+        "id": 7,
+        "name": "Chicken Tacos",
+        "sides": [
+          "salsa",
+          "guacamole"
+        ]
+      }
+    },
+    {
+      "date": 16,
+      "dayOfWeek": "Friday",
+      "meal": {
+        "id": 17,
+        "name": "Beef and Broccoli",
+        "sides": [
+          "rice"
+        ]
+      }
+    },
+    {
+      "date": 19,
+      "dayOfWeek": "Monday",
+      "meal": {
+        "id": 1,
+        "name": "Chili",
+        "sides": [
+          "crackers",
+          "cornbread"
+        ]
+      }
+    },
+    {
+      "date": 20,
+      "dayOfWeek": "Tuesday",
+      "meal": {
+        "id": 16,
+        "name": "Garlic Parmesan Penne with Steak and Broccoli",
+        "sides": [
+          "garlic bread"
+        ]
+      }
+    },
+    {
+      "date": 21,
+      "dayOfWeek": "Wednesday",
+      "meal": {
+        "id": 28,
+        "name": "Pork Chops",
+        "sides": [
+          "mashed potatoes",
+          "green beans"
+        ]
+      }
+    },
+    {
+      "date": 22,
+      "dayOfWeek": "Thursday",
+      "meal": {
+        "id": 25,
+        "name": "Hamburgers",
+        "sides": [
+          "fries"
+        ]
+      }
+    },
+    {
+      "date": 23,
+      "dayOfWeek": "Friday",
+      "meal": {
+        "id": 27,
+        "name": "Lasagna",
+        "sides": [
+          "salad"
+        ]
+      }
+    },
+    {
+      "date": 26,
+      "dayOfWeek": "Monday",
+      "meal": {
+        "id": 11,
+        "name": "Chicken and Noodles",
+        "sides": [
+          "cornbread"
+        ]
+      }
+    },
+    {
+      "date": 27,
+      "dayOfWeek": "Tuesday",
+      "meal": {
+        "id": 21,
+        "name": "Crunch Wraps",
+        "sides": [
+          "chips",
+          "salsa"
+        ]
+      }
+    },
+    {
+      "date": 28,
+      "dayOfWeek": "Wednesday",
+      "meal": {
+        "id": 37,
+        "name": "Chicken Philly cheesesteak",
+        "sides": [
+          "Fries"
+        ]
+      }
+    },
+    {
+      "date": 29,
+      "dayOfWeek": "Thursday",
+      "meal": {
+        "id": 31,
+        "name": "Baked BBQ Chicken",
+        "sides": [
+          "baked beans",
+          "macaroni and cheese"
+        ]
+      }
+    },
+    {
+      "date": 30,
+      "dayOfWeek": "Friday",
+      "meal": {
+        "id": 39,
+        "name": "Southwestern Bowl",
+        "sides": [
+          "Tortilla Chips"
+        ]
+      }
+    }
+  ]
+}
